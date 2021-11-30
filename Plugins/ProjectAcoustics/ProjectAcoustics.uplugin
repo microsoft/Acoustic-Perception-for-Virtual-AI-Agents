@@ -1,0 +1,38 @@
+{
+    "FileVersion": 3,
+    "Version": 1,
+    "VersionName": "2.0",
+    "FriendlyName": "Project Acoustics",
+    "Description": "Sound propagation design using accurate wave physics",
+    "Category": "Audio",
+    "CreatedBy": "Microsoft Corporation",
+    "CreatedByURL": "http://www.microsoft.com",
+    "DocsURL": "http://aka.ms/acoustics",
+    "MarketplaceURL": "",
+    "SupportURL": "https://github.com/microsoft/ProjectAcoustics/issues",
+    "CanContainContent": true,
+    "IsBetaVersion": false,
+    "Installed": false,
+    "Modules": [
+        {
+            "Name": "ProjectAcoustics",
+            "Type": "Runtime",
+            "LoadingPhase": "PreDefault"
+        },
+        {
+            "Name": "ProjectAcousticsBakeUI",
+            "Type": "Editor",
+            "LoadingPhase": "Default"
+        }
+    ],
+    "Plugins": [
+        {
+            "Name": "Wwise",
+            "Enabled": true
+        },
+        {
+          "Name": "PythonScriptPlugin",
+          "Enabled" :  true
+        }
+    ]
+}

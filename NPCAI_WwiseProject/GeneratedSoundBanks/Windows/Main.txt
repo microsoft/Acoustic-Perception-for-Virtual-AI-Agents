@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	500558109	Play0			\Default Work Unit\Play0	
+	3895011010	StopSource0			\Default Work Unit\StopSource0	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	609314588	Birds	D:\UE Projects\NPCAI\NPCAI_WwiseProject\.cache\Windows\SFX\VOCALS_bush_birds_multiple_chirp_loop_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\Source 0\Birds		5816384
+

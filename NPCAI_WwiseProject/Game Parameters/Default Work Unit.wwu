@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{778D93EB-1160-4D06-BBF4-4AA7B893ADB5}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{778D93EB-1160-4D06-BBF4-4AA7B893ADB5}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="NoiseVolume" ID="{881B5E7D-861F-46BF-A32D-9A4E9EFE29D0}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Source0Vol" ID="{0DFFD3F9-2DAF-40DD-AFDB-EEFC692293FE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="24"/>
+						<Property Name="Min" Type="Real64" Value="-96"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Source1Vol" ID="{FD24E79E-DEE1-4EC8-B48C-60AF70E6A5B7}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="24"/>
+						<Property Name="Min" Type="Real64" Value="-96"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Source2Vol" ID="{DF9D4B6C-E9B7-4F70-8035-84BAA633E07B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="24"/>
+						<Property Name="Min" Type="Real64" Value="-96"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Source3Vol" ID="{CA9A7A5D-4B25-4D81-A5F8-176D2C8323BE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="24"/>
+						<Property Name="Min" Type="Real64" Value="-96"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

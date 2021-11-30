@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}" SchemaVersion="103">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{E821F9E7-8E58-40FA-90EF-8560AF67B6A9}" WorkUnitID="{2C960DA7-1BE2-4DCB-9C80-02B22B76C97C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="Reverb_Bus" ID="{7CB90AA2-921D-4D90-823C-58AC4FA5775B}">
+							<PropertyList>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="AttachableMixerInput">
+									<Custom>
+										<Effect Name="Project Acoustics Mixer (Attached)" ID="{AEB94949-9FFC-4557-927B-FF95B5E39164}" ShortID="524981156" PluginName="AttachableMixerInput" CompanyID="275" PluginID="2" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AuxBus Name="Verb_X_Minus" ID="{55FF96AF-6D73-4385-8E6D-32D0104D55D3}">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="None" ID="{B788AA80-E7BF-464F-9A47-DFFC0990884D}" WorkUnitID="{4517EDB4-F234-4B61-A967-DD9EC5126B7B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AuxBus Name="XM_Short" ID="{5A1240EA-BC07-4EC3-B9AE-3D6DAB6C5DFB}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="XMShort" ID="{4D5BD0DF-E268-4845-AFEB-D774BDA0CD18}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="XM_Med" ID="{99282A5B-ED8B-47A2-8A0E-733680B9BF1E}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="XMMed" ID="{D782CF83-A84A-49B5-B8E0-7B1211C4AB1F}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="XM_Long" ID="{64CBD65B-BF91-453C-BB17-568A8E9996EC}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="XMLong" ID="{27317B11-9214-4677-AF41-BC7137782EA8}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="XM_XLong" ID="{1271CB62-718A-432C-B4C4-A17268048F0B}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="XMXLong" ID="{7D7E1448-7D07-4603-B3D7-441349B43172}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{C1F2D599-149A-4D4B-9B6D-78418EF8AE20}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{418168AE-CDDD-4848-A682-91FA75A65966}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Verb_X_Minus_Path" ID="{EB61B703-339E-421D-8F19-8B7B60E30C7E}">
+													<PointList>
+														<Point>
+															<XPos>-10</XPos>
+															<YPos>0</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Verb_X_Plus" ID="{12A05575-0D18-44D4-A089-2EF0CD746ADE}">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="None" ID="{B788AA80-E7BF-464F-9A47-DFFC0990884D}" WorkUnitID="{4517EDB4-F234-4B61-A967-DD9EC5126B7B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AuxBus Name="XP_Short" ID="{170B5E7D-89FD-4596-A2E8-79D3C2DB4A2F}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="XPShort" ID="{671EC5E7-2EDC-4578-BC6B-4D518076C696}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="XP_Med" ID="{3127F239-797D-4CA8-85CF-3E109160AC03}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="XPMed" ID="{087C6B7E-B85A-4851-A6A0-CD108548D239}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="XP_Long" ID="{458C5EF1-DD36-4C2E-A920-FAD08DA27C20}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="XPLong" ID="{CD431A10-18A7-47ED-9017-5DA26F1A88E3}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="XP_XLong" ID="{74BC752C-8E4A-4CB6-AB1C-ED824D117BBB}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="XPXLong" ID="{377B3466-5E57-4B8C-8867-F324FCF932A1}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{9EFC1FEA-241F-47E5-8CD4-F3A5A16076F5}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="100"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{793433AD-79EC-4D6E-BB81-74FA496BC27E}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Verb_X_Plus_Path" ID="{24469071-544A-47F9-AF13-D448259A2556}">
+													<PointList>
+														<Point>
+															<XPos>10</XPos>
+															<YPos>0</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Verb_Y_Minus" ID="{4DEC8543-23D0-467F-B071-3FC0A6702852}">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="None" ID="{B788AA80-E7BF-464F-9A47-DFFC0990884D}" WorkUnitID="{4517EDB4-F234-4B61-A967-DD9EC5126B7B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AuxBus Name="YM_Short" ID="{C25B2165-E838-4599-9C21-54DCF13C5194}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="YMShort" ID="{9C5A6F26-B2C3-4A55-919A-9F6BD430E7C4}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="YM_Med" ID="{EB70CBC9-ABAE-40F1-9B18-5465AD6C5C12}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="YMMed" ID="{8EA7A1BD-A6C7-4461-8D12-2E78AE35C31D}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="YM_Long" ID="{421C198B-29F9-4BEB-AC99-7791E1799AAC}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="YMLong" ID="{9D1731A0-BC25-4A76-9466-1B1122B335FF}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="YM_XLong" ID="{B6C3D989-736C-44EB-88CD-905843A2D5D6}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="YMXLong" ID="{4E90219F-3DD3-4D1D-A38D-1AD266C05E25}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{1350B48B-AFD6-4860-8DD4-815B675C96BF}">
+											<PropertyList>
+												<Property Name="PanY" Type="Real64" Value="-100"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{94F9CAA2-7B70-46A4-BBBB-D94DFEED530C}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Verb_Y_Minus_Path" ID="{3274A7F0-AEC7-42C0-9F0F-BE5DDE13E563}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>-10</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Verb_Y_Plus" ID="{5320C3A9-4F5C-45B3-88C5-5FF7C1EFDF60}">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="None" ID="{B788AA80-E7BF-464F-9A47-DFFC0990884D}" WorkUnitID="{4517EDB4-F234-4B61-A967-DD9EC5126B7B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AuxBus Name="YP_Short" ID="{60BE5543-B8AE-4373-BC76-3B3028473E35}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="YPShort" ID="{25D39775-026E-489A-963A-140B6579CB5B}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="YP_Med" ID="{D758778E-EB55-45D5-82E5-EAA2A25BA633}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="YPMed" ID="{666A336A-0759-4966-A895-B2460B9AFBC7}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="YP_Long" ID="{E9CC4601-5D22-4005-A138-994BBF84C311}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="YPLong" ID="{C19373B1-9EC3-4FA3-9D7B-21D5C280B040}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="YP_XLong" ID="{0BC72395-102D-47B0-BCB9-6AEA9D32FFE7}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="YPXLong" ID="{2E82BFF4-EFD5-428F-B48F-672FB64A5059}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{4B96BF5D-53C2-41EE-A215-C41F4D41D980}">
+											<PropertyList>
+												<Property Name="PanY" Type="Real64" Value="100"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{F5E886CB-4071-41D5-81E6-F8DD3AF37D7F}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Verb_Y_Plus_Path" ID="{692BE67B-263B-4A43-8C7C-F97CAFFDD646}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>10</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Verb_Z_Minus" ID="{0F83633C-E0B0-406F-B81E-676B51F6D2CB}">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="None" ID="{B788AA80-E7BF-464F-9A47-DFFC0990884D}" WorkUnitID="{4517EDB4-F234-4B61-A967-DD9EC5126B7B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AuxBus Name="ZM_Short" ID="{AAE4FA31-8D4B-46ED-85C4-180E6C4FED40}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="ZMShort" ID="{6F7D78B7-A1D9-4656-81C5-578714712DC0}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="ZM_Med" ID="{58EA78F3-AD23-41B5-8BC1-A166D2DBB8B3}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="ZMMed" ID="{8B92B498-E561-4664-996F-903B5ED48C10}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="ZM_Long" ID="{740A415D-5CC4-448C-AB81-F08057FE167C}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="ZMLong" ID="{BEEB07EF-641D-46B5-8010-4F1734FAB5B4}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="ZM_XLong" ID="{3920C589-812C-4164-A10B-E6BC13557ED8}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="ZMXLong" ID="{0A3D654F-F4C1-4573-9758-882B8F51D410}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{3FC9A24F-6316-4AD0-8EEC-681B68AAE1FC}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Verb_Z_Minus_Path" ID="{05A5EFB3-BA09-4CF6-B0B8-C5C1E709218A}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<ZPos>-10</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</AuxBus>
+								<AuxBus Name="Verb_Z_Plus" ID="{11B84CCF-08EE-42C4-9905-91358E7816BE}">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+										<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="None" ID="{B788AA80-E7BF-464F-9A47-DFFC0990884D}" WorkUnitID="{4517EDB4-F234-4B61-A967-DD9EC5126B7B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AuxBus Name="ZP_Short" ID="{32421D26-8D67-4BD4-93B2-065D65CF92D0}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="ZPShort" ID="{C73192B4-316C-4C05-99A3-4C0471AE7D93}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="ZP_Med" ID="{A566EE17-B19E-4EA8-BCDC-C040DF328383}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="ZPMed" ID="{C5FAC227-1F2F-4AC0-B0CF-AB3B14449833}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="ZP_Long" ID="{74B28778-A9CA-44A6-830A-892476D69787}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="ZPLong" ID="{200BA5C1-ED23-43C4-9FF4-BA5B01F5D09C}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+										<AuxBus Name="ZP_XLong" ID="{3B1F77E3-A1DE-46E3-86C2-A63C7636A4AB}">
+											<PropertyList>
+												<Property Name="BusChannelConfig" Type="int32">
+													<ValueList>
+														<Value>16641</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="ZPXLong" ID="{101DE791-2086-4C5B-AA24-6E864DC4D77A}" WorkUnitID="{2431F6BC-1D68-46EE-9C27-CCC764007857}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</AuxBus>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{17ABD904-ABFC-4979-8609-3C25D3025668}">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Verb_Z_Plus_Path" ID="{574B3F59-4D88-41BC-A70D-929827B75B5C}">
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<ZPos>10</ZPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists/>
+								</AuxBus>
+							</ChildrenList>
+							<ObjectLists/>
+						</AuxBus>
+					</ChildrenList>
+					<ObjectLists/>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\UE Projects\NPC_HighRise\ShooterGame\Content\WwiseAudio\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2363569453">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="158493456" Name="ZP_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Short"/>
+				<AuxBus Id="331376316" Name="ZP_XLong" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_XLong"/>
+				<AuxBus Id="342409997" Name="YP_XLong" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_XLong"/>
+				<AuxBus Id="484670024" Name="YM_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Med"/>
+				<AuxBus Id="774778998" Name="XP_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Short"/>
+				<AuxBus Id="894421048" Name="ZP_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Med"/>
+				<AuxBus Id="897077186" Name="XP_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Med"/>
+				<AuxBus Id="924616876" Name="YM_XLong" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_XLong"/>
+				<AuxBus Id="965806348" Name="Verb_Z_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus"/>
+				<AuxBus Id="1142749239" Name="ZM_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Long"/>
+				<AuxBus Id="1166486403" Name="XM_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Med"/>
+				<AuxBus Id="1267922468" Name="Verb_Z_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus"/>
+				<AuxBus Id="1727306497" Name="XM_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Long"/>
+				<AuxBus Id="1803359386" Name="Verb_X_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus"/>
+				<AuxBus Id="1906930016" Name="YM_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Long"/>
+				<AuxBus Id="1957142939" Name="XM_XLong" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_XLong"/>
+				<AuxBus Id="1961877785" Name="YP_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Short"/>
+				<AuxBus Id="2235405312" Name="YM_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Short"/>
+				<AuxBus Id="2319091066" Name="XP_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Long"/>
+				<AuxBus Id="2485735536" Name="ZP_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Long"/>
+				<AuxBus Id="2537277821" Name="ZM_XLong" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_XLong"/>
+				<AuxBus Id="2559008093" Name="Verb_Y_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus"/>
+				<AuxBus Id="2917229290" Name="Reverb_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus"/>
+				<AuxBus Id="3022409730" Name="XP_XLong" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_XLong"/>
+				<AuxBus Id="3070963527" Name="YP_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Long"/>
+				<AuxBus Id="3184958345" Name="ZM_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Short"/>
+				<AuxBus Id="3230458499" Name="Verb_Y_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus"/>
+				<AuxBus Id="3768545922" Name="Verb_X_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus"/>
+				<AuxBus Id="3929899537" Name="ZM_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Med"/>
+				<AuxBus Id="4150984887" Name="XM_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Short"/>
+				<AuxBus Id="4257713601" Name="YP_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Med"/>
+			</IncludedAuxBusses>
+			<ExcludedMemoryFiles>
+				<File Id="13786564" Language="SFX">
+					<ShortName>IR_Mono_0_Long.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_0_Long_9E0C8D71.wem</Path>
+				</File>
+				<File Id="39316127" Language="SFX">
+					<ShortName>IR_Mono_2_ExtraLong.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_2_ExtraLong_4997C22E.wem</Path>
+				</File>
+				<File Id="54641571" Language="SFX">
+					<ShortName>IR_Mono_3_Short.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_3_Short_DD863DCF.wem</Path>
+				</File>
+				<File Id="152739815" Language="SFX">
+					<ShortName>IR_Mono_4_Short.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_4_Short_5B952E14.wem</Path>
+				</File>
+				<File Id="203626024" Language="SFX">
+					<ShortName>IR_Mono_2_Short.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_2_Short_7A2DACC2.wem</Path>
+				</File>
+				<File Id="223650641" Language="SFX">
+					<ShortName>IR_Mono_2_Medium.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_2_Medium_2F441346.wem</Path>
+				</File>
+				<File Id="323768089" Language="SFX">
+					<ShortName>IR_Mono_0_Short.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_0_Short_35C6C2C0.wem</Path>
+				</File>
+				<File Id="363248190" Language="SFX">
+					<ShortName>IR_Mono_3_Medium.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_3_Medium_3AF163D9.wem</Path>
+				</File>
+				<File Id="365327050" Language="SFX">
+					<ShortName>IR_Mono_0_Medium.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_0_Medium_F92F4324.wem</Path>
+				</File>
+				<File Id="465137372" Language="SFX">
+					<ShortName>IR_Mono_3_Long.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_3_Long_0D3ADD64.wem</Path>
+				</File>
+				<File Id="531663507" Language="SFX">
+					<ShortName>IR_Mono_5_Long.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_5_Long_F8A8B456.wem</Path>
+				</File>
+				<File Id="579394075" Language="SFX">
+					<ShortName>IR_Mono_2_Long.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_2_Long_E36F3EC3.wem</Path>
+				</File>
+				<File Id="583738772" Language="SFX">
+					<ShortName>IR_Mono_4_Long.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_4_Long_4691C485.wem</Path>
+				</File>
+				<File Id="588916144" Language="SFX">
+					<ShortName>IR_Mono_4_ExtraLong.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_4_ExtraLong_021136C0.wem</Path>
+				</File>
+				<File Id="602072960" Language="SFX">
+					<ShortName>IR_Mono_0_ExtraLong.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_0_ExtraLong_2CDABEC4.wem</Path>
+				</File>
+				<File Id="615059383" Language="SFX">
+					<ShortName>IR_Mono_1_ExtraLong.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_1_ExtraLong_6A8CAEF5.wem</Path>
+				</File>
+				<File Id="618936270" Language="SFX">
+					<ShortName>IR_Mono_5_ExtraLong.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_5_ExtraLong_2449D101.wem</Path>
+				</File>
+				<File Id="641514630" Language="SFX">
+					<ShortName>IR_Mono_1_Long.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_1_Long_542B6032.wem</Path>
+				</File>
+				<File Id="705147274" Language="SFX">
+					<ShortName>IR_Mono_3_ExtraLong.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_3_ExtraLong_46D78F8F.wem</Path>
+				</File>
+				<File Id="707834467" Language="SFX">
+					<ShortName>IR_Mono_1_Medium.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_1_Medium_E52F1DC7.wem</Path>
+				</File>
+				<File Id="813784345" Language="SFX">
+					<ShortName>IR_Mono_5_Short.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_5_Short_41D1BDD9.wem</Path>
+				</File>
+				<File Id="820154930" Language="SFX">
+					<ShortName>IR_Mono_1_Short.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_1_Short_F025CAC5.wem</Path>
+				</File>
+				<File Id="832317886" Language="SFX">
+					<ShortName>IR_Mono_5_Medium.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_5_Medium_AAEABF23.wem</Path>
+				</File>
+				<File Id="1060578637" Language="SFX">
+					<ShortName>IR_Mono_4_Medium.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_4_Medium_EA1511B0.wem</Path>
+				</File>
+			</ExcludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="English(US)" Hash="3661597222">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>English(US)\Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4096831364" Name="AMB_Atrium" ObjectPath="\Events\Default Work Unit\AMB_Atrium">
+					<IncludedMemoryFiles>
+						<File Id="401220162" Language="SFX">
+							<ShortName>AMB_Bed_HighRise_Atrium_LP.WAV</ShortName>
+							<Path>SFX\AMB_Bed_HighRise_Atrium_LP_4E642330.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2738544226" Name="AMB_Marquee" ObjectPath="\Events\Default Work Unit\AMB_Marquee">
+					<IncludedMemoryFiles>
+						<File Id="11257481" Language="SFX">
+							<ShortName>AMB_UnrealMarquee_LP.WAV</ShortName>
+							<Path>SFX\AMB_UnrealMarquee_LP_4E642330.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3202361783" Name="AMB_Room" ObjectPath="\Events\Default Work Unit\AMB_Room">
+					<IncludedMemoryFiles>
+						<File Id="827288839" Language="SFX">
+							<ShortName>AMB_Bed_HighRise_Room_LP.WAV</ShortName>
+							<Path>SFX\AMB_Bed_HighRise_Room_LP_4E642330.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="636156557" Name="BelicaDialogue" ObjectPath="\Events\Default Work Unit\BelicaDialogue">
+					<IncludedMemoryFiles>
+						<File Id="10120520" Language="SFX">
+							<ShortName>LtBelica_Lore_Murdock_030.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Murdock_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="44725420" Language="SFX">
+							<ShortName>LtBelica_Lore_Death_Murdock_010.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Death_Murdock_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="117929007" Language="SFX">
+							<ShortName>LtBelica_Lore_Murdock_050.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Murdock_050_BFB259A6.wem</Path>
+						</File>
+						<File Id="162148238" Language="SFX">
+							<ShortName>LtBelica_Lore_Murdock_060.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Murdock_060_BFB259A6.wem</Path>
+						</File>
+						<File Id="256986186" Language="SFX">
+							<ShortName>LtBelica_Intro_QuestionResponse_010.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_QuestionResponse_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="269591430" Language="SFX">
+							<ShortName>LtBelica_Intro_Boast_030.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_Boast_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="269658182" Language="SFX">
+							<ShortName>LtBelica_Lore_Murdock_120.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Murdock_120_BFB259A6.wem</Path>
+						</File>
+						<File Id="306090293" Language="SFX">
+							<ShortName>LtBelica_Ability_No_030.WAV</ShortName>
+							<Path>SFX\LtBelica_Ability_No_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="306434882" Language="SFX">
+							<ShortName>LtBelica_Lore_Murdock_080.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Murdock_080_BFB259A6.wem</Path>
+						</File>
+						<File Id="317091100" Language="SFX">
+							<ShortName>LtBelica_Intro_Shinbi_010.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_Shinbi_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="342633818" Language="SFX">
+							<ShortName>LtBelica_Intro_BoastResponse_020.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_BoastResponse_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="344752990" Language="SFX">
+							<ShortName>LtBelica_Intro_BoastResponse_030.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_BoastResponse_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="385055684" Language="SFX">
+							<ShortName>LtBelica_Intro_QuestionResponse_020.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_QuestionResponse_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="398005536" Language="SFX">
+							<ShortName>LtBelica_Lore_Murdock_020.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Murdock_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="400975367" Language="SFX">
+							<ShortName>LtBelica_Intro_BoastResponse_010.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_BoastResponse_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="462324671" Language="SFX">
+							<ShortName>LtBelica_Intro_Statement_010.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_Statement_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="471357238" Language="SFX">
+							<ShortName>LtBelica_Intro_Question_030.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_Question_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="499492066" Language="SFX">
+							<ShortName>LtBelica_Ability_No_040.WAV</ShortName>
+							<Path>SFX\LtBelica_Ability_No_040_BFB259A6.wem</Path>
+						</File>
+						<File Id="547037356" Language="SFX">
+							<ShortName>LtBelica_Intro_QuestionResponse_030.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_QuestionResponse_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="547467498" Language="SFX">
+							<ShortName>LtBelica_Intro_Statement_030.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_Statement_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="623673950" Language="SFX">
+							<ShortName>LtBelica_Ability_No_020.WAV</ShortName>
+							<Path>SFX\LtBelica_Ability_No_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="677505914" Language="SFX">
+							<ShortName>LtBelica_Intro_Boast_020.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_Boast_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="679181296" Language="SFX">
+							<ShortName>LtBelica_Lore_Murdock_110.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Murdock_110_BFB259A6.wem</Path>
+						</File>
+						<File Id="688533866" Language="SFX">
+							<ShortName>LtBelica_Intro_Boast_010.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_Boast_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="691585998" Language="SFX">
+							<ShortName>LtBelica_Intro_Question_010.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_Question_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="858812435" Language="SFX">
+							<ShortName>LtBelica_Intro_Question_020.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_Question_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="885891160" Language="SFX">
+							<ShortName>LtBelica_Lore_Murdock_040.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Murdock_040_BFB259A6.wem</Path>
+						</File>
+						<File Id="894277719" Language="SFX">
+							<ShortName>LtBelica_Lore_Murdock_100.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Murdock_100_BFB259A6.wem</Path>
+						</File>
+						<File Id="914247228" Language="SFX">
+							<ShortName>LtBelica_Ability_No_010.WAV</ShortName>
+							<Path>SFX\LtBelica_Ability_No_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="928371597" Language="SFX">
+							<ShortName>LtBelica_Lore_Murdock_010.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Murdock_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="987191678" Language="SFX">
+							<ShortName>LtBelica_Lore_Murdock_070.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Murdock_070_BFB259A6.wem</Path>
+						</File>
+						<File Id="998932509" Language="SFX">
+							<ShortName>LtBelica_Lore_Murdock_090.WAV</ShortName>
+							<Path>SFX\LtBelica_Lore_Murdock_090_BFB259A6.wem</Path>
+						</File>
+						<File Id="1001425190" Language="SFX">
+							<ShortName>LtBelica_Intro_Statement_020.WAV</ShortName>
+							<Path>SFX\LtBelica_Intro_Statement_020_BFB259A6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4124152237" Name="BelicaFootstep" ObjectPath="\Events\Default Work Unit\BelicaFootstep">
+					<IncludedMemoryFiles>
+						<File Id="24187209" Language="SFX">
+							<ShortName>FOOTSTEPS_7.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_7_BFB259A6.wem</Path>
+						</File>
+						<File Id="53638205" Language="SFX">
+							<ShortName>FOOTSTEPS_3.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_3_BFB259A6.wem</Path>
+						</File>
+						<File Id="138599114" Language="SFX">
+							<ShortName>FOOTSTEPS_9.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_9_BFB259A6.wem</Path>
+						</File>
+						<File Id="186296216" Language="SFX">
+							<ShortName>FOOTSTEPS_17.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_17_BFB259A6.wem</Path>
+						</File>
+						<File Id="208603314" Language="SFX">
+							<ShortName>FOOTSTEPS_13.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_13_BFB259A6.wem</Path>
+						</File>
+						<File Id="320914111" Language="SFX">
+							<ShortName>FOOTSTEPS_10.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_10_BFB259A6.wem</Path>
+						</File>
+						<File Id="418664433" Language="SFX">
+							<ShortName>FOOTSTEPS_2.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_2_BFB259A6.wem</Path>
+						</File>
+						<File Id="431205539" Language="SFX">
+							<ShortName>FOOTSTEPS_1.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_1_BFB259A6.wem</Path>
+						</File>
+						<File Id="510757331" Language="SFX">
+							<ShortName>FOOTSTEPS_18.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_18_BFB259A6.wem</Path>
+						</File>
+						<File Id="671321834" Language="SFX">
+							<ShortName>FOOTSTEPS_4.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_4_BFB259A6.wem</Path>
+						</File>
+						<File Id="713873836" Language="SFX">
+							<ShortName>FOOTSTEPS_20.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_20_BFB259A6.wem</Path>
+						</File>
+						<File Id="788376754" Language="SFX">
+							<ShortName>FOOTSTEPS_6.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_6_BFB259A6.wem</Path>
+						</File>
+						<File Id="818875886" Language="SFX">
+							<ShortName>FOOTSETPS_5.wav</ShortName>
+							<Path>SFX\FOOTSETPS_5_BFB259A6.wem</Path>
+						</File>
+						<File Id="836382871" Language="SFX">
+							<ShortName>FOOTSTEPS_14.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_14_BFB259A6.wem</Path>
+						</File>
+						<File Id="841261362" Language="SFX">
+							<ShortName>FOOTSTEPS_15.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_15_BFB259A6.wem</Path>
+						</File>
+						<File Id="914734721" Language="SFX">
+							<ShortName>FOOTSTEPS_12.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_12_BFB259A6.wem</Path>
+						</File>
+						<File Id="963321157" Language="SFX">
+							<ShortName>FOOTSTEPS_8.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_8_BFB259A6.wem</Path>
+						</File>
+						<File Id="1023027584" Language="SFX">
+							<ShortName>FOOTSTEPS_19.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_19_BFB259A6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1729134568" Name="Fence" ObjectPath="\Events\Default Work Unit\Fence">
+					<IncludedMemoryFiles>
+						<File Id="168146101" Language="SFX">
+							<ShortName>SFX_Fence_LP.WAV</ShortName>
+							<Path>SFX\SFX_Fence_LP_4E642330.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4222101980" Name="MurdockDialogue" ObjectPath="\Events\Default Work Unit\MurdockDialogue">
+					<IncludedMemoryFiles>
+						<File Id="23241998" Language="SFX">
+							<ShortName>Murdock_Lore_Belica_080.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Belica_080_BFB259A6.wem</Path>
+						</File>
+						<File Id="64570879" Language="SFX">
+							<ShortName>Murdock_Lore_Belica_090.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Belica_090_BFB259A6.wem</Path>
+						</File>
+						<File Id="100688632" Language="SFX">
+							<ShortName>Murdock_Intro_Boast_010.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_Boast_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="135268623" Language="SFX">
+							<ShortName>Murdock_Intro_QuestionResponse_030.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_QuestionResponse_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="139726699" Language="SFX">
+							<ShortName>Murdock_Lore_Belica_040.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Belica_040_BFB259A6.wem</Path>
+						</File>
+						<File Id="144154558" Language="SFX">
+							<ShortName>Murdock_Intro_Question_010.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_Question_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="156522835" Language="SFX">
+							<ShortName>Murdock_Intro_BoastResponse_010.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_BoastResponse_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="248746531" Language="SFX">
+							<ShortName>Murdock_Lore_Belica_020.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Belica_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="255304294" Language="SFX">
+							<ShortName>Murdock_Ability_No_010.WAV</ShortName>
+							<Path>SFX\Murdock_Ability_No_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="257160215" Language="SFX">
+							<ShortName>Murdock_Intro_BoastResponse_030.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_BoastResponse_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="259714012" Language="SFX">
+							<ShortName>Murdock_Intro_Boast_030.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_Boast_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="296606076" Language="SFX">
+							<ShortName>Murdock_Intro_Statement_020.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_Statement_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="301671112" Language="SFX">
+							<ShortName>Murdock_Intro_Question_030.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_Question_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="398367148" Language="SFX">
+							<ShortName>Murdock_Lore_Belica_060.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Belica_060_BFB259A6.wem</Path>
+						</File>
+						<File Id="469210919" Language="SFX">
+							<ShortName>Murdock_Lore_Belica_070.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Belica_070_BFB259A6.wem</Path>
+						</File>
+						<File Id="560443817" Language="SFX">
+							<ShortName>Murdock_Ability_No_040.WAV</ShortName>
+							<Path>SFX\Murdock_Ability_No_040_BFB259A6.wem</Path>
+						</File>
+						<File Id="620159966" Language="SFX">
+							<ShortName>Murdock_Lore_Death_Belica_010.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Death_Belica_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="663645534" Language="SFX">
+							<ShortName>Murdock_Lore_Belica_100.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Belica_100_BFB259A6.wem</Path>
+						</File>
+						<File Id="674064457" Language="SFX">
+							<ShortName>Murdock_Intro_Boast_020.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_Boast_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="704117873" Language="SFX">
+							<ShortName>Murdock_Intro_QuestionResponse_020.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_QuestionResponse_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="707267964" Language="SFX">
+							<ShortName>Murdock_Ability_No_020.WAV</ShortName>
+							<Path>SFX\Murdock_Ability_No_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="721824175" Language="SFX">
+							<ShortName>Murdock_Intro_Question_020.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_Question_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="742816725" Language="SFX">
+							<ShortName>Murdock_Intro_QuestionResponse_010.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_QuestionResponse_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="752107295" Language="SFX">
+							<ShortName>Murdock_Intro_BoastResponse_020.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_BoastResponse_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="780231363" Language="SFX">
+							<ShortName>Murdock_Status_Victory_020.WAV</ShortName>
+							<Path>SFX\Murdock_Status_Victory_020_BFB259A6.wem</Path>
+						</File>
+						<File Id="794899773" Language="SFX">
+							<ShortName>Murdock_Lore_Belica_010.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Belica_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="808890298" Language="SFX">
+							<ShortName>Murdock_Intro_Statement_030.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_Statement_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="828723199" Language="SFX">
+							<ShortName>Murdock_Intro_Statement_010.WAV</ShortName>
+							<Path>SFX\Murdock_Intro_Statement_010_BFB259A6.wem</Path>
+						</File>
+						<File Id="887107573" Language="SFX">
+							<ShortName>Murdock_Lore_Belica_120.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Belica_120_BFB259A6.wem</Path>
+						</File>
+						<File Id="887244077" Language="SFX">
+							<ShortName>Murdock_Lore_Belica_110.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Belica_110_BFB259A6.wem</Path>
+						</File>
+						<File Id="889307987" Language="SFX">
+							<ShortName>Murdock_Lore_Belica_050.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Belica_050_BFB259A6.wem</Path>
+						</File>
+						<File Id="965708716" Language="SFX">
+							<ShortName>Murdock_Lore_Belica_030.WAV</ShortName>
+							<Path>SFX\Murdock_Lore_Belica_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="1048524296" Language="SFX">
+							<ShortName>Murdock_Ability_No_030.WAV</ShortName>
+							<Path>SFX\Murdock_Ability_No_030_BFB259A6.wem</Path>
+						</File>
+						<File Id="1059892883" Language="SFX">
+							<ShortName>Murdock_Status_Idle_010.WAV</ShortName>
+							<Path>SFX\Murdock_Status_Idle_010_BFB259A6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="283095492" Name="NpcGun" ObjectPath="\Events\Default Work Unit\NpcGun">
+					<IncludedMemoryFiles>
+						<File Id="892071037" Language="SFX">
+							<ShortName>FIREARMS_MG_M60_fire_01.wav</ShortName>
+							<Path>SFX\FIREARMS_MG_M60_fire_01_BFB259A6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3284032718" Name="Phones" ObjectPath="\Events\Default Work Unit\Phones">
+					<IncludedMemoryFiles>
+						<File Id="677980285" Language="SFX">
+							<ShortName>SFX_PhoneBox_LP.WAV</ShortName>
+							<Path>SFX\SFX_PhoneBox_LP_4E642330.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="500558109" Name="Play0" ObjectPath="\Events\Default Work Unit\Play0">
+					<IncludedMemoryFiles>
+						<File Id="609314588" Language="SFX">
+							<ShortName>VOCALS_bush_birds_multiple_chirp_loop_01.wav</ShortName>
+							<Path>SFX\VOCALS_bush_birds_multiple_chirp_loop_01_4E642330.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="500558108" Name="Play1" ObjectPath="\Events\Default Work Unit\Play1">
+					<IncludedMemoryFiles>
+						<File Id="787748069" Language="SFX">
+							<ShortName>TANK_FV4201_Chieftain_crush_car_03_tread_mono.wav</ShortName>
+							<Path>SFX\TANK_FV4201_Chieftain_crush_car_03_tread_mono_4E642330.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="500558111" Name="Play2" ObjectPath="\Events\Default Work Unit\Play2">
+					<IncludedMemoryFiles>
+						<File Id="192205761" Language="SFX">
+							<ShortName>VOCALS_dog_bark_fighting_03_close.wav</ShortName>
+							<Path>SFX\VOCALS_dog_bark_fighting_03_close_4E642330.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="500558110" Name="Play3" ObjectPath="\Events\Default Work Unit\Play3">
+					<IncludedMemoryFiles>
+						<File Id="110120509" Language="SFX">
+							<ShortName>FIREARMS_LMG_UltimaxMK3_fullAuto_01_close1.wav</ShortName>
+							<Path>SFX\FIREARMS_LMG_UltimaxMK3_fullAuto_01_close1_4E642330.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1213349991" Name="PlayGrenade" ObjectPath="\Events\Default Work Unit\PlayGrenade">
+					<IncludedMemoryFiles>
+						<File Id="113392297" Language="SFX">
+							<ShortName>EXPLOSIONS_grenade_01a.wav</ShortName>
+							<Path>SFX\EXPLOSIONS_grenade_01a_BFB259A6.wem</Path>
+						</File>
+						<File Id="221148152" Language="SFX">
+							<ShortName>EXPLOSIONS_tannerite_massive_01_AKG_D112.wav</ShortName>
+							<Path>SFX\EXPLOSIONS_tannerite_massive_01_AKG_D112_BFB259A6.wem</Path>
+						</File>
+						<File Id="858426182" Language="SFX">
+							<ShortName>EXPLOSIONS_tannerite_huge_01_AKG_D112.wav</ShortName>
+							<Path>SFX\EXPLOSIONS_tannerite_huge_01_AKG_D112_BFB259A6.wem</Path>
+						</File>
+						<File Id="891205128" Language="SFX">
+							<ShortName>EXPLOSIONS_grenade_01b.wav</ShortName>
+							<Path>SFX\EXPLOSIONS_grenade_01b_BFB259A6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3142500003" Name="PlayNoise" ObjectPath="\Events\Default Work Unit\PlayNoise">
+					<IncludedMemoryFiles>
+						<File Id="782505739" Language="English(US)">
+							<ShortName>URBAN_traffic_seattle_loop_05.wav</ShortName>
+							<Path>Voices\English(US)\URBAN_traffic_seattle_loop_05_4E642330.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3895011010" Name="StopSource0" ObjectPath="\Events\Default Work Unit\StopSource0"/>
+			</IncludedEvents>
+			<IncludedAuxBusses>
+				<AuxBus Id="158493456" Name="ZP_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Short"/>
+				<AuxBus Id="331376316" Name="ZP_XLong" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_XLong"/>
+				<AuxBus Id="342409997" Name="YP_XLong" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_XLong"/>
+				<AuxBus Id="484670024" Name="YM_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Med"/>
+				<AuxBus Id="774778998" Name="XP_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Short"/>
+				<AuxBus Id="894421048" Name="ZP_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Med"/>
+				<AuxBus Id="897077186" Name="XP_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Med"/>
+				<AuxBus Id="924616876" Name="YM_XLong" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_XLong"/>
+				<AuxBus Id="965806348" Name="Verb_Z_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus"/>
+				<AuxBus Id="1142749239" Name="ZM_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Long"/>
+				<AuxBus Id="1166486403" Name="XM_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Med"/>
+				<AuxBus Id="1267922468" Name="Verb_Z_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus"/>
+				<AuxBus Id="1727306497" Name="XM_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Long"/>
+				<AuxBus Id="1803359386" Name="Verb_X_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus"/>
+				<AuxBus Id="1906930016" Name="YM_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Long"/>
+				<AuxBus Id="1957142939" Name="XM_XLong" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_XLong"/>
+				<AuxBus Id="1961877785" Name="YP_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Short"/>
+				<AuxBus Id="2235405312" Name="YM_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Short"/>
+				<AuxBus Id="2319091066" Name="XP_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Long"/>
+				<AuxBus Id="2485735536" Name="ZP_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Long"/>
+				<AuxBus Id="2537277821" Name="ZM_XLong" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_XLong"/>
+				<AuxBus Id="2559008093" Name="Verb_Y_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus"/>
+				<AuxBus Id="2917229290" Name="Reverb_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus"/>
+				<AuxBus Id="3022409730" Name="XP_XLong" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_XLong"/>
+				<AuxBus Id="3070963527" Name="YP_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Long"/>
+				<AuxBus Id="3184958345" Name="ZM_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Short"/>
+				<AuxBus Id="3230458499" Name="Verb_Y_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus"/>
+				<AuxBus Id="3768545922" Name="Verb_X_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus"/>
+				<AuxBus Id="3929899537" Name="ZM_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Med"/>
+				<AuxBus Id="4150984887" Name="XM_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Short"/>
+				<AuxBus Id="4257713601" Name="YP_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Med"/>
+			</IncludedAuxBusses>
+			<IncludedMemoryFiles>
+				<File Id="13786564" Language="SFX">
+					<ShortName>IR_Mono_0_Long.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_0_Long_9E0C8D71.wem</Path>
+				</File>
+				<File Id="39316127" Language="SFX">
+					<ShortName>IR_Mono_2_ExtraLong.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_2_ExtraLong_4997C22E.wem</Path>
+				</File>
+				<File Id="54641571" Language="SFX">
+					<ShortName>IR_Mono_3_Short.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_3_Short_DD863DCF.wem</Path>
+				</File>
+				<File Id="152739815" Language="SFX">
+					<ShortName>IR_Mono_4_Short.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_4_Short_5B952E14.wem</Path>
+				</File>
+				<File Id="203626024" Language="SFX">
+					<ShortName>IR_Mono_2_Short.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_2_Short_7A2DACC2.wem</Path>
+				</File>
+				<File Id="223650641" Language="SFX">
+					<ShortName>IR_Mono_2_Medium.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_2_Medium_2F441346.wem</Path>
+				</File>
+				<File Id="323768089" Language="SFX">
+					<ShortName>IR_Mono_0_Short.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_0_Short_35C6C2C0.wem</Path>
+				</File>
+				<File Id="363248190" Language="SFX">
+					<ShortName>IR_Mono_3_Medium.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_3_Medium_3AF163D9.wem</Path>
+				</File>
+				<File Id="365327050" Language="SFX">
+					<ShortName>IR_Mono_0_Medium.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_0_Medium_F92F4324.wem</Path>
+				</File>
+				<File Id="465137372" Language="SFX">
+					<ShortName>IR_Mono_3_Long.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_3_Long_0D3ADD64.wem</Path>
+				</File>
+				<File Id="531663507" Language="SFX">
+					<ShortName>IR_Mono_5_Long.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_5_Long_F8A8B456.wem</Path>
+				</File>
+				<File Id="579394075" Language="SFX">
+					<ShortName>IR_Mono_2_Long.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_2_Long_E36F3EC3.wem</Path>
+				</File>
+				<File Id="583738772" Language="SFX">
+					<ShortName>IR_Mono_4_Long.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_4_Long_4691C485.wem</Path>
+				</File>
+				<File Id="588916144" Language="SFX">
+					<ShortName>IR_Mono_4_ExtraLong.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_4_ExtraLong_021136C0.wem</Path>
+				</File>
+				<File Id="602072960" Language="SFX">
+					<ShortName>IR_Mono_0_ExtraLong.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_0_ExtraLong_2CDABEC4.wem</Path>
+				</File>
+				<File Id="615059383" Language="SFX">
+					<ShortName>IR_Mono_1_ExtraLong.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_1_ExtraLong_6A8CAEF5.wem</Path>
+				</File>
+				<File Id="618936270" Language="SFX">
+					<ShortName>IR_Mono_5_ExtraLong.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_5_ExtraLong_2449D101.wem</Path>
+				</File>
+				<File Id="641514630" Language="SFX">
+					<ShortName>IR_Mono_1_Long.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_1_Long_542B6032.wem</Path>
+				</File>
+				<File Id="705147274" Language="SFX">
+					<ShortName>IR_Mono_3_ExtraLong.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_3_ExtraLong_46D78F8F.wem</Path>
+				</File>
+				<File Id="707834467" Language="SFX">
+					<ShortName>IR_Mono_1_Medium.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_1_Medium_E52F1DC7.wem</Path>
+				</File>
+				<File Id="813784345" Language="SFX">
+					<ShortName>IR_Mono_5_Short.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_5_Short_41D1BDD9.wem</Path>
+				</File>
+				<File Id="820154930" Language="SFX">
+					<ShortName>IR_Mono_1_Short.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_1_Short_F025CAC5.wem</Path>
+				</File>
+				<File Id="832317886" Language="SFX">
+					<ShortName>IR_Mono_5_Medium.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_5_Medium_AAEABF23.wem</Path>
+				</File>
+				<File Id="1060578637" Language="SFX">
+					<ShortName>IR_Mono_4_Medium.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\IR_Mono_4_Medium_EA1511B0.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<GameParameters>
+				<GameParameter Id="680248023" Name="NoiseVolume" ObjectPath="\Game Parameters\Default Work Unit\NoiseVolume"/>
+				<GameParameter Id="1747352569" Name="Source0Vol" ObjectPath="\Game Parameters\Default Work Unit\Source0Vol"/>
+				<GameParameter Id="1863699187" Name="Source2Vol" ObjectPath="\Game Parameters\Default Work Unit\Source2Vol"/>
+				<GameParameter Id="3029071442" Name="Source1Vol" ObjectPath="\Game Parameters\Default Work Unit\Source1Vol"/>
+				<GameParameter Id="3684861812" Name="Source3Vol" ObjectPath="\Game Parameters\Default Work Unit\Source3Vol"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

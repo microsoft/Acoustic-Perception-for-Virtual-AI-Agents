@@ -1,0 +1,11 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2917229290	Reverb_Bus			\Default Work Unit\Master Audio Bus\Reverb_Bus	
+	3230458499	Verb_Y_Minus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1990128658	Room_Medium	Wwise RoomVerb			
+	2546827424	New_Project_Acoustics_Mixer	Project Acoustics Mixer			
+

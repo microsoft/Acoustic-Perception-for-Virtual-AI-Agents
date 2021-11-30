@@ -1,0 +1,66 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	158493456	ZP_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Short	
+	331376316	ZP_XLong			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_XLong	
+	342409997	YP_XLong			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_XLong	
+	484670024	YM_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Med	
+	774778998	XP_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Short	
+	894421048	ZP_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Med	
+	897077186	XP_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Med	
+	924616876	YM_XLong			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_XLong	
+	965806348	Verb_Z_Minus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus	
+	1142749239	ZM_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Long	
+	1166486403	XM_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Med	
+	1267922468	Verb_Z_Plus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus	
+	1727306497	XM_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Long	
+	1803359386	Verb_X_Plus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus	
+	1906930016	YM_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Long	
+	1957142939	XM_XLong			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_XLong	
+	1961877785	YP_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Short	
+	2235405312	YM_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Short	
+	2319091066	XP_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Long	
+	2485735536	ZP_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Long	
+	2537277821	ZM_XLong			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_XLong	
+	2559008093	Verb_Y_Plus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus	
+	2917229290	Reverb_Bus			\Default Work Unit\Master Audio Bus\Reverb_Bus	
+	3022409730	XP_XLong			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_XLong	
+	3070963527	YP_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Long	
+	3184958345	ZM_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Short	
+	3230458499	Verb_Y_Minus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus	
+	3768545922	Verb_X_Minus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus	
+	3929899537	ZM_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Med	
+	4150984887	XM_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Short	
+	4257713601	YP_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Med	
+
+Effect plug-ins	ID	Name	Type				Notes
+	388735832	YPMed	Wwise Convolution Reverb			
+	408238269	XPMed	Wwise Convolution Reverb			
+	481574105	ZPLong	Wwise Convolution Reverb			
+	744032094	XMShort	Wwise Convolution Reverb			
+	865790940	YPXLong	Wwise Convolution Reverb			
+	1094823952	YPLong	Wwise Convolution Reverb			
+	1117365552	YPShort	Wwise Convolution Reverb			
+	1136217730	XMLong	Wwise Convolution Reverb			
+	1283663003	YMMed	Wwise Convolution Reverb			
+	1343163939	XPLong	Wwise Convolution Reverb			
+	1453662323	ZPXLong	Wwise Convolution Reverb			
+	1746857437	XPShort	Wwise Convolution Reverb			
+	1852053065	YMLong	Wwise Convolution Reverb			
+	1895415498	XMXLong	Wwise Convolution Reverb			
+	2593679500	ZMXLong	Wwise Convolution Reverb			
+	2696262874	XMMed	Wwise Convolution Reverb			
+	2741166563	YMXLong	Wwise Convolution Reverb			
+	2970166027	ZPMed	Wwise Convolution Reverb			
+	3223964767	YMShort	Wwise Convolution Reverb			
+	3367150784	ZMLong	Wwise Convolution Reverb			
+	3601611816	ZMMed	Wwise Convolution Reverb			
+	3601721137	XPXLong	Wwise Convolution Reverb			
+	3904468192	ZMShort	Wwise Convolution Reverb			
+	4281825519	ZPShort	Wwise Convolution Reverb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
