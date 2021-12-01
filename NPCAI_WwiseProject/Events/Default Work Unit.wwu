@@ -3,81 +3,12 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{38715A7A-5441-42D0-BB04-C0B415611786}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="StopSource0" ID="{9938209D-EA7A-4FC1-8EE1-411A19BBEE37}">
-					<ChildrenList>
-						<Action Name="" ID="{2B17CE5E-D737-4414-8A85-5B4E27505288}" ShortID="1032699416">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Birds" ID="{D268F864-B16D-49D5-98F8-09A2D31A46B5}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play0" ID="{D756CCC9-7D53-43A3-882A-D4C04FC30161}">
-					<ChildrenList>
-						<Action Name="" ID="{0940290A-4E6D-42FB-A956-7873D778A03D}" ShortID="919137951">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Birds" ID="{D268F864-B16D-49D5-98F8-09A2D31A46B5}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play1" ID="{D43B5762-D0E9-4E1C-8F41-D5F224F8B4A4}">
-					<ChildrenList>
-						<Action Name="" ID="{9CEDC885-6232-4B5A-A922-6BD65CD09655}" ShortID="1030096719">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Tank" ID="{09FC4BB0-9F6B-4D67-87E3-14B7ADA40095}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play2" ID="{E742D6F9-4753-4ABC-BB3F-2EC1415B0CBF}">
-					<ChildrenList>
-						<Action Name="" ID="{D0969E28-C33B-4B1C-AA0D-2D4B317F493E}" ShortID="586869926">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Dogs" ID="{DDEC30E3-E929-40F4-9032-F567441D4D9E}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play3" ID="{2F32CB3B-A3E5-4AEC-95A4-C2D3266D863C}">
-					<ChildrenList>
-						<Action Name="" ID="{2030FDF0-01CD-4C4A-B1DD-85C8A5B134D2}" ShortID="703797164">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MachineGun" ID="{6E46D32D-0178-4EAB-8A33-FCD98AB0C5B5}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="PlayNoise" ID="{7D1890AD-4852-41DE-8176-55ADB75217A0}">
 					<ChildrenList>
 						<Action Name="" ID="{9CABADFB-34D5-4553-9F4F-07622EF0226E}" ShortID="787223126">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="NoiseContainer" ID="{06195B6C-3DC1-4745-B6D4-4657B4C8D91D}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="PlayGrenade" ID="{B5BF6639-B178-40BE-BA31-DFCA6556BC57}">
-					<ChildrenList>
-						<Action Name="" ID="{8FED7135-6FA8-43F9-9941-61176ED97A78}" ShortID="89110960">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Grenade" ID="{D04B56F8-D97D-46DB-A0B7-752D14899815}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
