@@ -10,11 +10,6 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
-						<Reference Name="AttachableMixerInput">
-							<Custom>
-								<Effect Name="Project Acoustics Mixer (Attached)" ID="{F05618B9-FECE-47CA-B6F7-BDA3B5831AEC}" ShortID="300513605" PluginName="AttachableMixerInput" CompanyID="275" PluginID="2" PluginType="3"/>
-							</Custom>
-						</Reference>
 						<Reference Name="Attenuation">
 							<ObjectRef Name="RealisticAtten" ID="{74EC732E-4192-4FB2-BE29-D8EF4EADD7A2}" WorkUnitID="{4517EDB4-F234-4B61-A967-DD9EC5126B7B}"/>
 						</Reference>
@@ -2537,11 +2532,6 @@
 						</Property>
 					</PropertyList>
 					<ReferenceList>
-						<Reference Name="AttachableMixerInput">
-							<Custom>
-								<Effect Name="Project Acoustics Mixer (Attached)" ID="{80B1133D-22FF-437E-AB9D-166121EE26A8}" ShortID="451718719" PluginName="AttachableMixerInput" CompanyID="275" PluginID="2" PluginType="3"/>
-							</Custom>
-						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
 						</Reference>

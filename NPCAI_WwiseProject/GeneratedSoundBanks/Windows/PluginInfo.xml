@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Project="NPCAI_WwiseProject" Platform="Windows" BasePlatform="Windows">
 	<Plugins>
-		<Plugin Name="Project Acoustics Mixer" ID="69942" DLL="AcousticsWwiseDll"/>
 		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb"/>
 		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>
 		<Plugin Name="No Output" ID="11862023" DLL="DefaultSink"/>

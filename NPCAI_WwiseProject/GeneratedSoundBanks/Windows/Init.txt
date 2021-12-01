@@ -12,7 +12,6 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	1990128658	Room_Medium	Wwise RoomVerb			
-	2546827424	New_Project_Acoustics_Mixer	Project Acoustics Mixer			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

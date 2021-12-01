@@ -27,11 +27,6 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
-								<Reference Name="AttachableMixerInput">
-									<Custom>
-										<Effect Name="Project Acoustics Mixer (Attached)" ID="{AEB94949-9FFC-4557-927B-FF95B5E39164}" ShortID="524981156" PluginName="AttachableMixerInput" CompanyID="275" PluginID="2" PluginType="3"/>
-									</Custom>
-								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<AuxBus Name="Verb_X_Minus" ID="{55FF96AF-6D73-4385-8E6D-32D0104D55D3}">

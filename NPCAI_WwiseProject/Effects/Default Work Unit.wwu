@@ -3,30 +3,6 @@
 	<Effects>
 		<WorkUnit Name="Default Work Unit" ID="{2431F6BC-1D68-46EE-9C27-CCC764007857}" PersistMode="Standalone">
 			<ChildrenList>
-				<Effect Name="New_Project_Acoustics_Mixer" ID="{20D89796-D1F7-470E-93AA-94CE17E24A8E}" PluginName="Project Acoustics Mixer" CompanyID="275" PluginID="1" PluginType="6">
-					<PropertyList>
-						<Property Name="AdditionalReverbPower" Type="Real32">
-							<ValueList>
-								<Value>-20</Value>
-							</ValueList>
-						</Property>
-						<Property Name="DecayTimeScalar" Type="Real32">
-							<ValueList>
-								<Value>0</Value>
-							</ValueList>
-						</Property>
-						<Property Name="EngineConfig" Type="int32">
-							<ValueList>
-								<Value>2</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Spatialize" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-				</Effect>
 				<Effect Name="ConvShort" ID="{1113F789-1671-4D92-9574-E6425120CCF1}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 					<PropertyList>
 						<Property Name="IRConvolutionStop" Type="Real64" Value="0.50009926975945"/>
@@ -46,7 +22,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{CAC9E6B6-F066-499F-8FC8-60CB4DA89746}">
+				<Curve Name="" ID="{5DAE16D5-7CF9-43E8-9713-DCE723F26C8D}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -65,7 +41,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{1E0C0E4A-28EF-4A83-96CB-B78102D86573}">
+				<Curve Name="" ID="{8994E375-8BCA-4E10-A6D2-11046C90A86B}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -84,7 +60,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{03BFA15D-F9AC-44AE-93E4-F9357A1B468F}">
+				<Curve Name="" ID="{6C46B216-D3D7-47E9-B817-484BE6174446}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -130,7 +106,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{B1298958-1CF0-4CB2-9EAE-4E049EFC7AEB}">
+				<Curve Name="" ID="{2FFA5CCE-BA6F-47EC-A4A2-1072D4110F9A}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -150,7 +126,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{1C3F064E-A90E-4D7B-AB37-260C44B2EA53}">
+				<Curve Name="" ID="{1A7D3D2A-41B2-4C1C-9038-A53CF9D0C496}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -169,7 +145,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{A575AEEA-784A-4A12-8C5A-5FF2AAD87749}">
+				<Curve Name="" ID="{C959F5D1-92A4-4D18-9181-C6A839FED11B}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -215,7 +191,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{58187717-5206-483D-BA97-6072A081AE86}">
+				<Curve Name="" ID="{2A93461B-B98B-4230-AA55-87E8A6904632}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -234,7 +210,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{7EBC81EB-37EF-49A0-9340-F6645AB14039}">
+				<Curve Name="" ID="{768AD3D5-F25F-43D6-8DF4-17707220C3D6}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -253,7 +229,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{824C328F-8F4E-4626-94C1-30BBFE4C52D2}">
+				<Curve Name="" ID="{2F218276-B53C-43D9-8A60-A5F17D27ECA1}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -294,7 +270,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{F9351E58-D45E-4009-92CF-7B70A42B1AEA}">
+				<Curve Name="" ID="{5D8CACD0-3608-46D8-AE3F-EF6EABBB216A}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -313,7 +289,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{CFB02C1E-021C-4D26-A637-8244604653C9}">
+				<Curve Name="" ID="{53852C3E-5CC2-443F-856D-777DDD475C75}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -332,7 +308,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{8F07F736-0120-4089-942B-304F30E23066}">
+				<Curve Name="" ID="{DEEA1DC7-A3F8-41CC-8E2C-9BA3A4D8047F}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -373,7 +349,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{7A6009EC-D566-4270-B807-151AC9BB4B8C}">
+				<Curve Name="" ID="{A6B85E1F-4DD3-4EB2-BF30-EE494F1F9C54}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -392,7 +368,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{CAC9EC3C-4214-4B34-B3C4-F5A0BA213D78}">
+				<Curve Name="" ID="{127B0906-F01E-4EEB-927B-8FE13B71056C}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -411,7 +387,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{EA7440ED-4874-48B2-84D7-29E55C2343F3}">
+				<Curve Name="" ID="{5B8E4F89-2D8A-4759-9D3D-97AA2FEC0581}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -452,7 +428,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{DC1E7500-9BBD-4E06-8F5C-DDE439DB23EA}">
+				<Curve Name="" ID="{C022AD18-62BC-4A12-BBD1-3E6EFAFAC8EF}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -471,7 +447,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{3866C0E8-C66F-4DB3-8483-6ACB6A564976}">
+				<Curve Name="" ID="{F41408C8-8249-48EF-9889-B21944DCF65E}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -490,7 +466,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{BF5B2147-E9AF-4181-869E-6EC5B35F7F5A}">
+				<Curve Name="" ID="{A2EE5153-9536-496D-B451-F938982663AF}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -531,7 +507,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{A7C1DF43-4377-498B-AE3A-275AC2B7D833}">
+				<Curve Name="" ID="{471D5293-BE16-4FEF-A173-17963D7C284E}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -550,7 +526,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{FF1E88D7-9891-483A-B0DC-CD010260094F}">
+				<Curve Name="" ID="{DD631F64-0BEA-4DB9-9DE2-393B69A3FAE8}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -569,7 +545,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{34E9651F-90C0-4D05-8D64-ED49981873AE}">
+				<Curve Name="" ID="{5F9A65C6-FBC2-49AF-801C-405204D36D05}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -610,7 +586,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{4D7B258A-1E14-42D1-80FB-A4FDA13DC39B}">
+				<Curve Name="" ID="{94F756E5-7673-4725-86E6-6EB05A33908E}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -629,7 +605,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{D55BFEEB-94FD-4719-B801-72EF962A66A6}">
+				<Curve Name="" ID="{BF9F942C-622C-4C02-90E1-CCAEB51DB792}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -648,7 +624,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{2D64EA48-420F-438B-AA4D-7035CF745996}">
+				<Curve Name="" ID="{938B1900-0A61-46F6-905F-45881FA90D04}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -689,7 +665,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{BF312653-A257-4846-8190-BEFFCB742878}">
+				<Curve Name="" ID="{A282EC46-CFC6-4A44-92C3-99EDA0CCD015}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -708,7 +684,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{672CE179-16F4-4CEC-AAD8-FF92E1E8C16A}">
+				<Curve Name="" ID="{1B38B6A5-7B6C-4684-A4EE-81384E16EB47}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -727,7 +703,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{03A984BC-8C4D-4CBA-84E1-9F703E2DF6DF}">
+				<Curve Name="" ID="{8E6FC331-51B1-46F5-BEAA-83E2B7939579}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -768,7 +744,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{D163E1A1-1FDC-4D68-8C1E-A2FDA3E6B7D7}">
+				<Curve Name="" ID="{8B113488-D237-402A-B5E0-EF7758AEE6A9}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -787,7 +763,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{D67E5E83-074E-4AB7-8C89-6EDF7EE8672B}">
+				<Curve Name="" ID="{971C6CB3-99EC-456C-B3DB-2A8348C7618D}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -806,7 +782,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{761F6F6B-D227-492E-93CA-0E39B59CA036}">
+				<Curve Name="" ID="{D5B610CD-67C6-4E30-A978-B682B33DFA4D}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -847,7 +823,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{D09AB8EE-8D90-4CF1-B082-8B5C79B99038}">
+				<Curve Name="" ID="{70C4C42D-AF73-42BC-839D-A6EE7F3447A3}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -866,7 +842,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{CF2A54FE-E82D-4488-B0AA-B5E2551AB50A}">
+				<Curve Name="" ID="{681DA000-A8E5-465F-9FF9-ADA5E6502ED9}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -885,7 +861,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{6E408511-3A4D-41F5-9316-EF519530AFCB}">
+				<Curve Name="" ID="{535D7E1E-0ACA-4388-9784-39CE3DBFCE95}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -926,7 +902,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{1328E8EB-32F8-4A2F-92B6-0239D87C40FE}">
+				<Curve Name="" ID="{0AF46BD4-17AE-4633-A83E-983F1041C97F}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -945,7 +921,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{7C9AA580-DB89-42A7-A288-0D5D6B4B1CF9}">
+				<Curve Name="" ID="{72FFA4E3-7664-4688-A39B-E59635BFA500}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -964,7 +940,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{A16DB42C-6B1A-4523-9D75-21D5CBA57550}">
+				<Curve Name="" ID="{7E3FBF4A-C76B-419B-AB1D-E9C0F3AA7BF8}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1005,7 +981,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{E37DD66E-6948-444C-9570-381D4562DEF3}">
+				<Curve Name="" ID="{38DD4611-F519-4B25-813D-082FB13756A2}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1024,7 +1000,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{2BF1DC17-C298-4819-8097-99021DF036B5}">
+				<Curve Name="" ID="{95F20FA5-8666-44F3-AF52-1ED90501A352}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1043,7 +1019,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{6DD56D1F-0A17-44DA-884C-2E4620123B03}">
+				<Curve Name="" ID="{A5DDC288-25C3-4B75-BAB8-7A138592AF7C}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1084,7 +1060,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{D339A39B-17EB-4A26-A945-E351B4F2F75C}">
+				<Curve Name="" ID="{3575E70F-FE76-4A60-A919-00C0DE349554}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1103,7 +1079,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{1CFD00C5-C71D-4AA7-A855-3ADF4C676D96}">
+				<Curve Name="" ID="{0E2126EB-2A97-4D5A-B1C0-4A5FA265BDF2}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1122,7 +1098,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{C9C82EE9-E984-4B98-BBC9-9C02C13F6869}">
+				<Curve Name="" ID="{5601EF7C-59E1-495E-88AD-43A5B9A3EAD1}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1163,7 +1139,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{D3763097-BE55-4B94-8182-67B83C79CFBA}">
+				<Curve Name="" ID="{D4BFA912-662A-4D2E-8B01-FB5986278CE0}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1182,7 +1158,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{A52A2B29-E1AB-4281-91F6-C68C6B9A78FF}">
+				<Curve Name="" ID="{7F22867A-696C-44B1-A3CE-80350A94A145}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1201,7 +1177,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{5D2F51ED-45F7-40E8-94C7-B814411F50EB}">
+				<Curve Name="" ID="{4FDB6436-AAC4-477C-BD08-629211FE5D6F}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1242,7 +1218,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{46AFB0C3-C995-4923-B1AE-968037297910}">
+				<Curve Name="" ID="{6C65CB26-E51C-4734-9C8B-347C38E1830E}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1261,7 +1237,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{182C36F3-7F71-4ADD-A346-44A42B459EBF}">
+				<Curve Name="" ID="{145F6538-3DCD-47FF-9B3A-9042F17DB07B}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1280,7 +1256,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{BD379155-A93E-463F-8E0B-2CB6E109F706}">
+				<Curve Name="" ID="{11BCC20F-B7A6-4DE6-81E4-0CDD8A571C5D}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1321,7 +1297,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{9EF27EEE-EB16-42A7-B1EB-21121C538884}">
+				<Curve Name="" ID="{2152DA50-4AB6-4AE8-ADEE-077293270FB8}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1340,7 +1316,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{0A1B5881-BEA9-4FDC-804D-854EDEDA575E}">
+				<Curve Name="" ID="{6928562B-C320-4C0D-B88B-E67602ABFE2E}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1359,7 +1335,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{15E9C8D6-0E6F-400A-AF0A-F795C75D02BF}">
+				<Curve Name="" ID="{CFD3F59E-4F7A-4059-82E4-3FD100DC3EFF}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1400,7 +1376,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{08D84B43-783B-4DB9-B984-31912803CDA2}">
+				<Curve Name="" ID="{8F70FE0C-77E5-4A92-9115-64517C7858B2}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1419,7 +1395,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{CF3FF783-21EA-4269-92A5-53CBAFE38E6A}">
+				<Curve Name="" ID="{E964DB23-E1C8-46C9-9E26-99315C7301C8}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1438,7 +1414,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{6691A677-EB92-463B-A8A8-845ACD6EC536}">
+				<Curve Name="" ID="{0AD7266B-CC6D-4DD1-BDC8-50A2DA35B13F}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1479,7 +1455,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{30162CB1-2427-4ADF-9B8A-82BE125DA3CA}">
+				<Curve Name="" ID="{98FE8AFF-D7E0-4509-AE7C-74144F797D0C}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1498,7 +1474,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{31EE6DAE-31FE-4FCB-B5B9-10A41244C987}">
+				<Curve Name="" ID="{C3079EBE-A6D2-4E22-BF21-3AF22167AAF2}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1517,7 +1493,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{09BF2606-DE9E-4126-BF15-8E5CB21086D1}">
+				<Curve Name="" ID="{0EC684DB-0A06-42AB-92AA-CD3B74800848}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1558,7 +1534,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{BD22F247-1A0C-4C8B-A922-814BA35F8333}">
+				<Curve Name="" ID="{335D26E7-6476-45B9-9EC9-124E35B4B581}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1577,7 +1553,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{A77CAEB4-5D5C-4262-B165-BC471BBBB2EE}">
+				<Curve Name="" ID="{DE403E74-E0A5-49ED-8C06-7734CA063F74}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1596,7 +1572,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{7AC24AEC-CD78-49E0-AEB1-3F964DE51F73}">
+				<Curve Name="" ID="{E5967A38-CF26-4B5D-A660-15E8BB6A8E79}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1637,7 +1613,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{51C62ADC-5F3E-4309-8A85-5DDA7D866DFE}">
+				<Curve Name="" ID="{9D1AA4ED-8763-4A80-8297-EBEA3D58304B}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1656,7 +1632,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{B3785C85-3BFD-48FB-B80B-A02AE683DA3D}">
+				<Curve Name="" ID="{835E6DDF-AE47-412E-AB8F-2A205FB8301A}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1675,7 +1651,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{6FDDD640-B3F0-43E5-97A0-28E63BE40ECD}">
+				<Curve Name="" ID="{797790FE-4FE1-4FBA-8913-9413E28A7F4D}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1716,7 +1692,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{FDC52C03-31AF-4109-884B-D17CF528314B}">
+				<Curve Name="" ID="{258E6D7D-F0D4-483F-B646-19C8F2762585}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1735,7 +1711,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{CD58F1FA-EFBE-471D-B6F4-5970F5714BF9}">
+				<Curve Name="" ID="{FA7E338A-4D3E-4BA0-9610-CA19DCE9E9B7}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1754,7 +1730,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{C9A9E779-6BEB-4827-B412-2F77A6C12E84}">
+				<Curve Name="" ID="{DA67A89F-9245-4E92-ABCB-D51666FAEBF3}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1795,7 +1771,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{239EB7A7-F146-4B90-914D-1BFA30E97326}">
+				<Curve Name="" ID="{8B4209DC-73A5-43E5-A9A4-20A338523AC9}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1814,7 +1790,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{97606421-9156-41F6-8D2D-13876D62A925}">
+				<Curve Name="" ID="{4DAA0A1D-B959-45D1-B709-05774D09C435}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1833,7 +1809,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{61AA7B09-91EE-44C3-A883-7A41747CEB62}">
+				<Curve Name="" ID="{9381B4F7-22B9-4C87-B46F-1102D76F41D2}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1874,7 +1850,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{0DE4F2D1-D0D5-430C-859C-4C0999BD7A72}">
+				<Curve Name="" ID="{186D2F0E-C9E5-4A52-BB45-C5D1849826ED}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1893,7 +1869,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{29C21CDC-DB8E-4E4C-8801-D77AB7085DC8}">
+				<Curve Name="" ID="{A8268269-5705-42B3-8602-ABC872B3815E}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1912,7 +1888,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{1BD9574E-5CA4-4E99-99AC-984A28462FAE}">
+				<Curve Name="" ID="{3E440EC8-F9B6-4032-80EC-FBC2DEB9CAE8}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -1953,7 +1929,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{74E68F5B-9B54-466D-BEBE-9E7E574F470A}">
+				<Curve Name="" ID="{EE2662F4-A1F2-46AF-AAEC-CD5D4851FA4E}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -1972,7 +1948,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{DFE343F8-4896-45EC-A9EA-C66F88BC74CA}">
+				<Curve Name="" ID="{AE641086-88A0-4B4E-929B-653FEC63AE1C}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -1991,7 +1967,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{078EA6F7-09B7-492A-B33F-49FF40593002}">
+				<Curve Name="" ID="{D0EDD397-EADC-4F5A-B76D-88B14E649E80}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -2032,7 +2008,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{3FB053A9-5D66-4E82-AD74-AEE1B57D3567}">
+				<Curve Name="" ID="{3F98F7A7-E741-4F6B-94D6-06D97185C627}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -2051,7 +2027,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{169FA1A9-2E6A-4F37-8C10-5C606DC7C2AE}">
+				<Curve Name="" ID="{15875F4A-A2C5-4528-B22A-C77F78FB248D}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -2070,7 +2046,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{368AEA95-1825-4539-8929-673C8CB7F642}">
+				<Curve Name="" ID="{F4E7F0A6-FEF4-4FA4-82E7-8CF9582FFED6}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
@@ -2111,7 +2087,7 @@
 	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
-				<Curve Name="" ID="{28FA8B71-2006-49A3-BF58-8837D4C9C42E}">
+				<Curve Name="" ID="{A9CF2268-D412-42BA-8CAC-0F90C4A377B1}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="19"/>
 					</PropertyList>
@@ -2130,7 +2106,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLPF">
-				<Curve Name="" ID="{2EF38D43-13D5-4193-9530-F20F40CC8EB1}">
+				<Curve Name="" ID="{FBB635B7-B152-41B0-96CD-6E416BFA90DF}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="5"/>
 					</PropertyList>
@@ -2149,7 +2125,7 @@
 				</Curve>
 			</CurveInfo>
 			<CurveInfo Name="IRLevel">
-				<Curve Name="" ID="{22D0A414-DCC3-40E6-B080-1068E2C101FB}">
+				<Curve Name="" ID="{E386B819-C1E9-4571-ACC2-B3016178A2EB}">
 					<PropertyList>
 						<Property Name="Flags" Type="int32" Value="1"/>
 					</PropertyList>
