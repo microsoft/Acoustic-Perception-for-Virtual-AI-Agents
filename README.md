@@ -1,6 +1,8 @@
 # Project
 
-This repo contains code based on Microsoft Project Acoustics, and implements acoustic perception algorithm for Virtual AI agents described in [this paper](https://dl.acm.org/doi/10.1145/3480139).
+This repo contains code based on Microsoft Project Acoustics, and implements acoustic perception algorithm for Virtual AI agents described in [this paper](https://dl.acm.org/doi/10.1145/3480139). Below is a demonstration of our method.
+
+[![Demo Video](https://img.youtube.com/vi/Z_t37500Cpg/0.jpg)](https://www.youtube.com/watch?v=Z_t37500Cpg)
 
 The method is wholly contained in the AcousticsSecondaryListener class, split between [the header](Plugins\ProjectAcoustics\Source\ProjectAcoustics\Public\AcousticsSecondaryListener.h) and [implementation](Plugins\ProjectAcoustics\Source\ProjectAcoustics\Private\AcousticsSecondaryListener.cpp).
 
