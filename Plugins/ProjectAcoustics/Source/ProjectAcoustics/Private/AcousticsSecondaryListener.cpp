@@ -198,7 +198,7 @@ void UAcousticsSecondaryListener::TickComponent(float DeltaTime, enum ELevelTick
 #if !UE_BUILD_SHIPPING
             SCOPE_CYCLE_COUNTER(STAT_Acoustics_NpcPolicyEval);
 #endif
-            EvaluateNewPolicy();
+            EvaluatePolicy();
         
         }
     }
@@ -334,7 +334,7 @@ void UAcousticsSecondaryListener::AddEnergyToNoiseFloor(const SourceEnergy& ener
     m_directNoiseEnergy[energy.direct_idx] += energy.direct_e;
 }
 
-void UAcousticsSecondaryListener::AddEnergyNEW(const SourceEnergy& energy)
+void UAcousticsSecondaryListener::AddEnergy(const SourceEnergy& energy)
 {
     m_reflectEnergy[0] += energy.refl_up_e;
     m_reflectEnergy[1] += energy.refl_0_e;
@@ -344,7 +344,7 @@ void UAcousticsSecondaryListener::AddEnergyNEW(const SourceEnergy& energy)
     m_reflectEnergy[5] += energy.refl_down_e;
 }
 
-void UAcousticsSecondaryListener::SubEnergyNEW(const SourceEnergy& energy)
+void UAcousticsSecondaryListener::SubEnergy(const SourceEnergy& energy)
 {
     m_reflectEnergy[0] -= energy.refl_up_e;
     m_reflectEnergy[1] -= energy.refl_0_e;
@@ -354,7 +354,7 @@ void UAcousticsSecondaryListener::SubEnergyNEW(const SourceEnergy& energy)
     m_reflectEnergy[5] -= energy.refl_down_e;
 }
 
-float UAcousticsSecondaryListener::SigmoidNEW(float x, float x_min, float x_max)
+float UAcousticsSecondaryListener::Sigmoid(float x, float x_min, float x_max)
 {
     // Scaling the sigmoid by this value ensures S(-1) = 0.05 and S(1) = 0.95.
     const float K = 2.945f;
@@ -365,9 +365,9 @@ float UAcousticsSecondaryListener::SigmoidNEW(float x, float x_min, float x_max)
     return 1.0f / (1.0f + std::expf(-v));
 }
 
-void UAcousticsSecondaryListener::ComputeAudibilityNEW(int targetIndex, FVector& direction, float& confidence, float& directPercent, float& reflectPercent)
+void UAcousticsSecondaryListener::ComputeAudibility(int targetIndex, FVector& direction, float& confidence, float& directPercent, float& reflectPercent)
 {
-    SubEnergyNEW(m_AllTargetEnergies[targetIndex]);
+    SubEnergy(m_AllTargetEnergies[targetIndex]);
 
     // Compute reflection vector.
     FVector reflectDirection;
@@ -431,9 +431,9 @@ void UAcousticsSecondaryListener::ComputeAudibilityNEW(int targetIndex, FVector&
 
     // Convert total energy to dB-SMR and compute an overall confidence value using a Sigmoid function.
     float totalDbSmr = 10.0f * std::log10f(totalEnergySum);
-    confidence = SigmoidNEW(totalDbSmr, MinMaskingThresholdDb, MaxMaskingThresholdDb);
+    confidence = Sigmoid(totalDbSmr, MinMaskingThresholdDb, MaxMaskingThresholdDb);
 
-    AddEnergyNEW(m_AllTargetEnergies[targetIndex]);
+    AddEnergy(m_AllTargetEnergies[targetIndex]);
 
     // I want raw SMRs, not weights
     directPercent = energyToDb(directEnergySmr);
@@ -498,7 +498,7 @@ void UAcousticsSecondaryListener::AccumulateTargets()
             if (!IgnoreAmbiences)
             {
                 AddEnergyToNoiseFloor(s);
-                AddEnergyNEW(s);
+                AddEnergy(s);
             }
             m_AllTargetEnergies.Add(s);
 
@@ -601,7 +601,7 @@ void UAcousticsSecondaryListener::AccumulateAmbiences()
 
             SourceEnergy s = TritonParamsToSourceEnergy(tritonParams, extraLoudnessDb);
             AddEnergyToNoiseFloor(s);
-            AddEnergyNEW(s);
+            AddEnergy(s);
             m_AllAmbientEnergies.Add(s);
 
             tritonParams.DirectLoudnessDB += extraLoudnessDb;
@@ -647,7 +647,7 @@ void UAcousticsSecondaryListener::ComputeKernels()
     generateMaskingKernel(kernel.data(), kANGLE_COUNT, 0, MaxAttenuationAt90Deg);
 }
 
-void UAcousticsSecondaryListener::EvaluateNewPolicy()
+void UAcousticsSecondaryListener::EvaluatePolicy()
 {
     float confidence = 0;
     float max_confidence = 0;
@@ -661,7 +661,7 @@ void UAcousticsSecondaryListener::EvaluateNewPolicy()
     float dc, rc;
     for (size_t i = 0; i < m_AllTargetEnergies.Num(); ++i)
     {
-        ComputeAudibilityNEW(i, direction, confidence, dc, rc);
+        ComputeAudibility(i, direction, confidence, dc, rc);
         if (confidence > max_confidence)
         {
             max_confidence = confidence;

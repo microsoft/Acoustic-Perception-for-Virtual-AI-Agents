@@ -4,13 +4,6 @@
 
 #include <array>
 #include <complex>
-#define _MANAGED 0
-#define _M_CEE 0
-#define _XM_SSE_INTRINSICS_ 1
-#include "XDSP.h"
-#undef _M_CEE
-#undef _MANAGED
-
 
 #include "Engine/GameEngine.h"
 #include "IAcoustics.h"
@@ -24,11 +17,6 @@ DECLARE_CYCLE_STAT_EXTERN(TEXT("NPC Reset Policy"), STAT_Acoustics_NpcPolicyRese
 DECLARE_CYCLE_STAT_EXTERN(TEXT("NPC Get Inputs"), STAT_Acoustics_NpcPolicyInput, STATGROUP_AcousticsNPC, );
 DECLARE_CYCLE_STAT_EXTERN(TEXT("NPC Policy Eval"), STAT_Acoustics_NpcPolicyEval, STATGROUP_AcousticsNPC, );
 
-// MICHEM TODO
-// For perf testing, set to 360, take measurement
-// Then set to 48, take measurement
-// The perf at 48 *should be* roughly what we would get at 360 if we optimized the FFTs.
-// If time, pull in FFTW
 constexpr size_t kANGLE_COUNT = 360;
 constexpr size_t kTABLE_LEN = 180;
 constexpr size_t kNUM_DIRECTIONS = 6;
@@ -47,169 +35,6 @@ typedef struct SourceEnergy
     float refl_up_e;
     FVector directDir;
 } SourceEnergy;
-
-void RVRVAdd(float* signal1, float* signal2, int n);
-
-// Complex Vector, Complex Vector addition
-void CVCVAdd(std::complex<float>* signal1, std::complex<float>* signal2, int n);
-
-// This routine performs frequency-domain convolution: Element-wise complex product using SSE3.
-void CVCVMult(std::complex<float>* signal, std::complex<float>* filter, int n);
-
-template <size_t N>
-class FftWrapper
-{
-public:
-    FftWrapper()
-    {
-        assert(XDSP::ISPOWEROF2(N));
-
-        if (FftWrapper<N>::numBuffers == 0)
-        {
-            FftWrapper<N>::unityTable = static_cast<DirectX::XMVECTOR*>(_aligned_malloc(N * sizeof(DirectX::XMVECTOR), 16));
-            FftWrapper<N>::unityTableHalf = static_cast<DirectX::XMVECTOR*>(_aligned_malloc(N / 2 * sizeof(DirectX::XMVECTOR), 16));
-            XDSP::FFTInitializeUnityTable(FftWrapper<N>::unityTable, N);
-            XDSP::FFTInitializeUnityTable(FftWrapper<N>::unityTableHalf, N / 2);
-        }
-        FftWrapper<N>::numBuffers++;
-
-        this->m_real_temp = static_cast<float*>(_aligned_malloc((N + 4) * sizeof(float), 16));
-        this->m_imag_temp = static_cast<float*>(_aligned_malloc((N + 4) * sizeof(float), 16));
-        this->m_temp1 = static_cast<float*>(_aligned_malloc((N + 4) * sizeof(float), 16));
-        this->m_temp2 = static_cast<float*>(_aligned_malloc((N + 4) * sizeof(float), 16));
-
-        int nSpectrum = N / 2 + 1;
-        this->m_cplus = static_cast<std::complex<float>*>(_aligned_malloc(nSpectrum * sizeof(std::complex<float>), 16));
-        this->m_cminus = static_cast<std::complex<float>*>(_aligned_malloc(nSpectrum * sizeof(std::complex<float>), 16));
-        this->m_ztemp = static_cast<std::complex<float>*>(_aligned_malloc(N / 2 * sizeof(std::complex<float>), 16));
-
-        for (int i = 0; i < nSpectrum; ++i)
-        {
-            m_cplus[i].real(.5f * (1.f - std::sinf((2 * PI * i) * FftWrapper<N>::oneByN)));
-            m_cplus[i].imag(.5f * (-std::cosf((2 * PI * i) * FftWrapper<N>::oneByN)));
-
-            m_cminus[i].real(.5f * (1.f + std::sinf((2 * PI * i) * FftWrapper<N>::oneByN)));
-            m_cminus[i].imag(.5f * (std::cosf((2 * PI * i) * FftWrapper<N>::oneByN)));
-        }
-    }
-
-    ~FftWrapper()
-    {
-        _aligned_free(this->m_real_temp);
-        _aligned_free(this->m_imag_temp);
-        _aligned_free(this->m_temp1);
-        _aligned_free(this->m_temp2);
-        _aligned_free(this->m_cplus);
-        _aligned_free(this->m_cminus);
-        _aligned_free(this->m_ztemp);
-
-        FftWrapper<N>::numBuffers--;
-        if (FftWrapper<N>::numBuffers == 0)
-        {
-            _aligned_free(FftWrapper<N>::unityTable);
-            _aligned_free(FftWrapper<N>::unityTableHalf);
-        }
-    }
-
-    constexpr size_t Size() const
-    {
-        return N;
-    }
-
-    void Fft(float* input, std::complex<float>* output)
-    {
-        int nSpectrum = N / 2 + 1;
-        memset(m_real_temp, 0, nSpectrum * sizeof(float));
-        memset(m_imag_temp, 0, nSpectrum * sizeof(float));
-
-        // Interleave data as real and imaginary parts, do FFT
-        for (int i = 0; i < N / 2; i++)
-        {
-            m_real_temp[i] = input[2 * i];
-            m_imag_temp[i] = input[2 * i + 1];
-        }
-
-        XDSP::FFT((XDSP::XMVECTOR*)m_real_temp, (XDSP::XMVECTOR*)m_imag_temp, FftWrapper<N>::unityTableHalf, N / 2);
-        XDSP::FFTUnswizzle((XDSP::XMVECTOR*)m_temp1, (XDSP::XMVECTOR*)m_real_temp, FftWrapper<N>::log2N - 1);
-        XDSP::FFTUnswizzle((XDSP::XMVECTOR*)m_temp2, (XDSP::XMVECTOR*)m_imag_temp, FftWrapper<N>::log2N - 1);
-
-        float t1 = m_temp1[0];
-        float t2 = m_temp2[0];
-
-        for (int i = 1; i < N / 2; i++)
-        {
-            m_ztemp[i].real(m_temp1[i]);
-            m_ztemp[i].imag(m_temp2[i]);
-
-            output[i].real(m_temp1[N / 2 - i]);
-            output[i].imag(-m_temp2[N / 2 - i]);
-        }
-
-        CVCVMult(m_ztemp, m_cplus, N / 2);
-        CVCVMult(output, m_cminus, N / 2);
-        CVCVAdd(output, m_ztemp, N / 2);
-
-        // DC bin
-        output[0].real(t1 + t2);
-        output[0].imag(0);
-
-        // Nyquist bin
-        output[N / 2].real(t1 - t2);
-        output[N / 2].imag(0);
-    }
-
-    void Ifft(std::complex<float>* input, float* output)
-    {
-        m_real_temp[0] = input[0].real();
-        m_imag_temp[0] = 0;
-
-        // Fill conjugated, then do FFT. The result need not be conjugated, since it is real.
-        int nSpectrum = N / 2 + 1;
-        for (int i = 1; i < nSpectrum; i++)
-        {
-            m_real_temp[i] = input[i].real();
-            m_imag_temp[i] = -input[i].imag();
-
-            m_real_temp[N - i] = m_real_temp[i];
-            m_imag_temp[N - i] = -m_imag_temp[i]; // Conjugate, mirrored
-        }
-
-        m_imag_temp[N / 2] = 0;
-
-        XDSP::FFT((XDSP::XMVECTOR*)m_real_temp, (XDSP::XMVECTOR*)m_imag_temp, FftWrapper<N>::unityTable, N);
-        XDSP::FFTUnswizzle((XDSP::XMVECTOR*)output, (XDSP::XMVECTOR*)m_real_temp, FftWrapper<N>::log2N);
-
-        const XDSP::XMVECTOR scale = _mm_set_ps1(1.0f / N);
-        XDSP::XMVECTOR* O = (XDSP::XMVECTOR*)output;
-
-        for (int i = 0; i < N / 4; i++)
-        {
-            O[i] = _mm_mul_ps(O[i], scale);
-        }
-    }
-
-    static DirectX::XMVECTOR* unityTable;
-    static DirectX::XMVECTOR* unityTableHalf;
-    static size_t numBuffers;
-    static size_t log2N;
-    static float oneByN;
-
-private:
-    float* m_real_temp;
-    float* m_imag_temp;
-    float* m_temp1;
-    float* m_temp2;
-
-    std::complex<float>* m_cplus;
-    std::complex<float>* m_cminus;
-    std::complex<float>* m_ztemp;
-};
-
-DirectX::XMVECTOR* FftWrapper<kANGLE_COUNT>::unityTable = nullptr;
-DirectX::XMVECTOR* FftWrapper<kANGLE_COUNT>::unityTableHalf = nullptr;
-size_t FftWrapper<kANGLE_COUNT>::numBuffers = 0;
-size_t FftWrapper<kANGLE_COUNT>::log2N = static_cast<size_t>(std::log2(static_cast<float>(kANGLE_COUNT)));
-float FftWrapper<kANGLE_COUNT>::oneByN = 1.0f / static_cast<float>(kANGLE_COUNT);
 
 
 UCLASS(
@@ -297,15 +122,15 @@ private:
     // Fast evaluation methods.
     int DotProductToTableIndex(const FVector& a, const FVector& b);
     void ComputeReflectVector(const SourceEnergy& energy, FVector& reflectDirection, float& reflectMag);
-    void ComputeAudibilityNEW(int targetIndex, FVector& direction, float& confidence, float& directPercent, float& reflectPercent);
-    void AddEnergyNEW(const SourceEnergy& energy);
-    void SubEnergyNEW(const SourceEnergy& energy);
-    float SigmoidNEW(float x, float x_min, float x_max);
+    void ComputeAudibility(int targetIndex, FVector& direction, float& confidence, float& directPercent, float& reflectPercent);
+    void AddEnergy(const SourceEnergy& energy);
+    void SubEnergy(const SourceEnergy& energy);
+    float Sigmoid(float x, float x_min, float x_max);
     SourceEnergy TritonParamsToSourceEnergy(const TritonAcousticParameters& params, float loudness_dbspl);
 
     void ComputeKernels();
     void AddEnergyToNoiseFloor(const SourceEnergy& energy);
-    void EvaluateNewPolicy();
+    void EvaluatePolicy();
 
     void ApplyPolicy();
     void ShowDebugInfo();
