@@ -1,6 +1,6 @@
 # Acoustic Perception for Virtual AI Agents
 
-This repo contains code based on Microsoft Project Acoustics, and implements acoustic perception algorithm for Virtual AI agents described in [this paper](https://dl.acm.org/doi/10.1145/3480139). Below is a demonstration of our method.
+This repo contains code based on Microsoft Project Acoustics, and implements an acoustic perception algorithm for Virtual AI agents described in [this paper](https://dl.acm.org/doi/10.1145/3480139). Below is a demonstration of our method.
 
 [![Demo Video](https://img.youtube.com/vi/Z_t37500Cpg/0.jpg)](https://www.youtube.com/watch?v=Z_t37500Cpg)
 
@@ -10,10 +10,11 @@ The method is wholly contained in the AcousticsSecondaryListener class, split be
 
 This project depends on Visual Studio 2019, UE 4.25, and Wwise 2021.1. To run the project, you must:
 - Clone the repo. This repo uses [Git LFS](https://git-lfs.github.com/). Ensure Git LFS is installed prior to cloning.
+- This project relies on Wwise Convolution Reverb, which requires a separate license. Add this license to your local copy of the Wwise project if you want to regenerate sound banks.
 - Integrate Wwise 2021.1 into the project
 - Run [PatchWwise.bat](Plugins/ProjectAcoustics/Resources/PatchWwise.bat)
 - Generate VS project files for the project
-- Build and run from VS.
+- Build and run from VS
 
 ## Troubleshooting
 
