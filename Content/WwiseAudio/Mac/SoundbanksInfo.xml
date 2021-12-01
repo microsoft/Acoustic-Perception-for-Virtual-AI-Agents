@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\UE Projects\NPC_HighRise\ShooterGame\Content\WwiseAudio\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3363239999">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="158493456" Name="ZP_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Short"/>
+				<AuxBus Id="484670024" Name="YM_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Med"/>
+				<AuxBus Id="774778998" Name="XP_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Short"/>
+				<AuxBus Id="894421048" Name="ZP_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Med"/>
+				<AuxBus Id="897077186" Name="XP_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Med"/>
+				<AuxBus Id="965806348" Name="Verb_Z_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus"/>
+				<AuxBus Id="1142749239" Name="ZM_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Long"/>
+				<AuxBus Id="1166486403" Name="XM_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Med"/>
+				<AuxBus Id="1267922468" Name="Verb_Z_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus"/>
+				<AuxBus Id="1727306497" Name="XM_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Long"/>
+				<AuxBus Id="1803359386" Name="Verb_X_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus"/>
+				<AuxBus Id="1906930016" Name="YM_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Long"/>
+				<AuxBus Id="1961877785" Name="YP_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Short"/>
+				<AuxBus Id="2235405312" Name="YM_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Short"/>
+				<AuxBus Id="2319091066" Name="XP_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Long"/>
+				<AuxBus Id="2485735536" Name="ZP_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Long"/>
+				<AuxBus Id="2559008093" Name="Verb_Y_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus"/>
+				<AuxBus Id="2917229290" Name="Reverb_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus"/>
+				<AuxBus Id="3070963527" Name="YP_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Long"/>
+				<AuxBus Id="3184958345" Name="ZM_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Short"/>
+				<AuxBus Id="3230458499" Name="Verb_Y_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus"/>
+				<AuxBus Id="3768545922" Name="Verb_X_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus"/>
+				<AuxBus Id="3929899537" Name="ZM_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Med"/>
+				<AuxBus Id="4150984887" Name="XM_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Short"/>
+				<AuxBus Id="4257713601" Name="YP_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Med"/>
+			</IncludedAuxBusses>
+			<ExcludedMemoryFiles>
+				<File Id="22640951" Language="SFX">
+					<ShortName>AK Luna Studio.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK Luna Studio_482978B1.wem</Path>
+				</File>
+				<File Id="473901946" Language="SFX">
+					<ShortName>AK Luna Studio.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK Luna Studio_D34A600D.wem</Path>
+				</File>
+				<File Id="706238460" Language="SFX">
+					<ShortName>AK Luna Studio.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK Luna Studio_C932A58A.wem</Path>
+				</File>
+			</ExcludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="English(US)" Hash="270280916">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>English(US)\Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4096831364" Name="AMB_Atrium" ObjectPath="\Events\Default Work Unit\AMB_Atrium">
+					<IncludedMemoryFiles>
+						<File Id="401220162" Language="SFX">
+							<ShortName>AMB_Bed_HighRise_Atrium_LP.WAV</ShortName>
+							<Path>SFX\AMB_Bed_HighRise_Atrium_LP_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2738544226" Name="AMB_Marquee" ObjectPath="\Events\Default Work Unit\AMB_Marquee">
+					<IncludedMemoryFiles>
+						<File Id="11257481" Language="SFX">
+							<ShortName>AMB_UnrealMarquee_LP.WAV</ShortName>
+							<Path>SFX\AMB_UnrealMarquee_LP_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4124152237" Name="BelicaFootstep" ObjectPath="\Events\Default Work Unit\BelicaFootstep">
+					<IncludedMemoryFiles>
+						<File Id="24187209" Language="SFX">
+							<ShortName>FOOTSTEPS_7.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_7_10C4C929.wem</Path>
+						</File>
+						<File Id="53638205" Language="SFX">
+							<ShortName>FOOTSTEPS_3.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_3_10C4C929.wem</Path>
+						</File>
+						<File Id="138599114" Language="SFX">
+							<ShortName>FOOTSTEPS_9.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_9_10C4C929.wem</Path>
+						</File>
+						<File Id="186296216" Language="SFX">
+							<ShortName>FOOTSTEPS_17.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_17_10C4C929.wem</Path>
+						</File>
+						<File Id="208603314" Language="SFX">
+							<ShortName>FOOTSTEPS_13.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_13_10C4C929.wem</Path>
+						</File>
+						<File Id="320914111" Language="SFX">
+							<ShortName>FOOTSTEPS_10.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_10_10C4C929.wem</Path>
+						</File>
+						<File Id="418664433" Language="SFX">
+							<ShortName>FOOTSTEPS_2.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_2_10C4C929.wem</Path>
+						</File>
+						<File Id="431205539" Language="SFX">
+							<ShortName>FOOTSTEPS_1.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_1_10C4C929.wem</Path>
+						</File>
+						<File Id="510757331" Language="SFX">
+							<ShortName>FOOTSTEPS_18.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_18_10C4C929.wem</Path>
+						</File>
+						<File Id="671321834" Language="SFX">
+							<ShortName>FOOTSTEPS_4.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_4_10C4C929.wem</Path>
+						</File>
+						<File Id="713873836" Language="SFX">
+							<ShortName>FOOTSTEPS_20.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_20_10C4C929.wem</Path>
+						</File>
+						<File Id="788376754" Language="SFX">
+							<ShortName>FOOTSTEPS_6.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_6_10C4C929.wem</Path>
+						</File>
+						<File Id="818875886" Language="SFX">
+							<ShortName>FOOTSETPS_5.wav</ShortName>
+							<Path>SFX\FOOTSETPS_5_10C4C929.wem</Path>
+						</File>
+						<File Id="836382871" Language="SFX">
+							<ShortName>FOOTSTEPS_14.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_14_10C4C929.wem</Path>
+						</File>
+						<File Id="841261362" Language="SFX">
+							<ShortName>FOOTSTEPS_15.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_15_10C4C929.wem</Path>
+						</File>
+						<File Id="914734721" Language="SFX">
+							<ShortName>FOOTSTEPS_12.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_12_10C4C929.wem</Path>
+						</File>
+						<File Id="963321157" Language="SFX">
+							<ShortName>FOOTSTEPS_8.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_8_10C4C929.wem</Path>
+						</File>
+						<File Id="1023027584" Language="SFX">
+							<ShortName>FOOTSTEPS_19.wav</ShortName>
+							<Path>SFX\FOOTSTEPS_19_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="283095492" Name="NpcGun" ObjectPath="\Events\Default Work Unit\NpcGun">
+					<IncludedMemoryFiles>
+						<File Id="892071037" Language="SFX">
+							<ShortName>FIREARMS_MG_M60_fire_01.wav</ShortName>
+							<Path>SFX\FIREARMS_MG_M60_fire_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3284032718" Name="Phones" ObjectPath="\Events\Default Work Unit\Phones">
+					<IncludedMemoryFiles>
+						<File Id="677980285" Language="SFX">
+							<ShortName>SFX_PhoneBox_LP.WAV</ShortName>
+							<Path>SFX\SFX_PhoneBox_LP_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="500558109" Name="Play0" ObjectPath="\Events\Default Work Unit\Play0">
+					<IncludedMemoryFiles>
+						<File Id="609314588" Language="SFX">
+							<ShortName>VOCALS_bush_birds_multiple_chirp_loop_01.wav</ShortName>
+							<Path>SFX\VOCALS_bush_birds_multiple_chirp_loop_01_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="500558108" Name="Play1" ObjectPath="\Events\Default Work Unit\Play1">
+					<IncludedMemoryFiles>
+						<File Id="787748069" Language="SFX">
+							<ShortName>TANK_FV4201_Chieftain_crush_car_03_tread_mono.wav</ShortName>
+							<Path>SFX\TANK_FV4201_Chieftain_crush_car_03_tread_mono_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="500558111" Name="Play2" ObjectPath="\Events\Default Work Unit\Play2">
+					<IncludedMemoryFiles>
+						<File Id="192205761" Language="SFX">
+							<ShortName>VOCALS_dog_bark_fighting_03_close.wav</ShortName>
+							<Path>SFX\VOCALS_dog_bark_fighting_03_close_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="500558110" Name="Play3" ObjectPath="\Events\Default Work Unit\Play3">
+					<IncludedMemoryFiles>
+						<File Id="110120509" Language="SFX">
+							<ShortName>FIREARMS_LMG_UltimaxMK3_fullAuto_01_close1.wav</ShortName>
+							<Path>SFX\FIREARMS_LMG_UltimaxMK3_fullAuto_01_close1_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1213349991" Name="PlayGrenade" ObjectPath="\Events\Default Work Unit\PlayGrenade">
+					<IncludedMemoryFiles>
+						<File Id="113392297" Language="SFX">
+							<ShortName>EXPLOSIONS_grenade_01a.wav</ShortName>
+							<Path>SFX\EXPLOSIONS_grenade_01a_10C4C929.wem</Path>
+						</File>
+						<File Id="221148152" Language="SFX">
+							<ShortName>EXPLOSIONS_tannerite_massive_01_AKG_D112.wav</ShortName>
+							<Path>SFX\EXPLOSIONS_tannerite_massive_01_AKG_D112_10C4C929.wem</Path>
+						</File>
+						<File Id="858426182" Language="SFX">
+							<ShortName>EXPLOSIONS_tannerite_huge_01_AKG_D112.wav</ShortName>
+							<Path>SFX\EXPLOSIONS_tannerite_huge_01_AKG_D112_10C4C929.wem</Path>
+						</File>
+						<File Id="891205128" Language="SFX">
+							<ShortName>EXPLOSIONS_grenade_01b.wav</ShortName>
+							<Path>SFX\EXPLOSIONS_grenade_01b_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3142500003" Name="PlayNoise" ObjectPath="\Events\Default Work Unit\PlayNoise">
+					<IncludedMemoryFiles>
+						<File Id="782505739" Language="English(US)">
+							<ShortName>URBAN_traffic_seattle_loop_05.wav</ShortName>
+							<Path>Voices\English(US)\URBAN_traffic_seattle_loop_05_4E642330.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3895011010" Name="StopSource0" ObjectPath="\Events\Default Work Unit\StopSource0"/>
+			</IncludedEvents>
+			<IncludedAuxBusses>
+				<AuxBus Id="158493456" Name="ZP_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Short"/>
+				<AuxBus Id="484670024" Name="YM_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Med"/>
+				<AuxBus Id="774778998" Name="XP_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Short"/>
+				<AuxBus Id="894421048" Name="ZP_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Med"/>
+				<AuxBus Id="897077186" Name="XP_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Med"/>
+				<AuxBus Id="965806348" Name="Verb_Z_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus"/>
+				<AuxBus Id="1142749239" Name="ZM_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Long"/>
+				<AuxBus Id="1166486403" Name="XM_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Med"/>
+				<AuxBus Id="1267922468" Name="Verb_Z_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus"/>
+				<AuxBus Id="1727306497" Name="XM_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Long"/>
+				<AuxBus Id="1803359386" Name="Verb_X_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus"/>
+				<AuxBus Id="1906930016" Name="YM_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Long"/>
+				<AuxBus Id="1961877785" Name="YP_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Short"/>
+				<AuxBus Id="2235405312" Name="YM_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Short"/>
+				<AuxBus Id="2319091066" Name="XP_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Long"/>
+				<AuxBus Id="2485735536" Name="ZP_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Long"/>
+				<AuxBus Id="2559008093" Name="Verb_Y_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus"/>
+				<AuxBus Id="2917229290" Name="Reverb_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus"/>
+				<AuxBus Id="3070963527" Name="YP_Long" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Long"/>
+				<AuxBus Id="3184958345" Name="ZM_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Short"/>
+				<AuxBus Id="3230458499" Name="Verb_Y_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus"/>
+				<AuxBus Id="3768545922" Name="Verb_X_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus"/>
+				<AuxBus Id="3929899537" Name="ZM_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Med"/>
+				<AuxBus Id="4150984887" Name="XM_Short" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Short"/>
+				<AuxBus Id="4257713601" Name="YP_Med" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Med"/>
+			</IncludedAuxBusses>
+			<IncludedMemoryFiles>
+				<File Id="22640951" Language="SFX">
+					<ShortName>AK Luna Studio.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK Luna Studio_482978B1.wem</Path>
+				</File>
+				<File Id="473901946" Language="SFX">
+					<ShortName>AK Luna Studio.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK Luna Studio_D34A600D.wem</Path>
+				</File>
+				<File Id="706238460" Language="SFX">
+					<ShortName>AK Luna Studio.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK Luna Studio_C932A58A.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<GameParameters>
+				<GameParameter Id="680248023" Name="NoiseVolume" ObjectPath="\Game Parameters\Default Work Unit\NoiseVolume"/>
+				<GameParameter Id="1747352569" Name="Source0Vol" ObjectPath="\Game Parameters\Default Work Unit\Source0Vol"/>
+				<GameParameter Id="1863699187" Name="Source2Vol" ObjectPath="\Game Parameters\Default Work Unit\Source2Vol"/>
+				<GameParameter Id="3029071442" Name="Source1Vol" ObjectPath="\Game Parameters\Default Work Unit\Source1Vol"/>
+				<GameParameter Id="3684861812" Name="Source3Vol" ObjectPath="\Game Parameters\Default Work Unit\Source3Vol"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

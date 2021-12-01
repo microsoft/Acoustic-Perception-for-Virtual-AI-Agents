@@ -1,0 +1,23 @@
+public:
+   /**
+    *    ************* PROJECT ACOUSTICS MOD **************
+    * Sets occlusion and obstruction values for each position defined by SetMultiplePositions().
+    *    Each obstruction/occlusion pair will affect the corresponding position defined at the same index.
+    *    In the case the number of obstruction/occlusion pairs is smaller than the number of positions,
+    *    remaining positions' obstrucion/occlusion values are set to 0.0.
+    *
+    * @param in_pEmitter            AkComponent on which to activate the occlusion
+    * @param in_pListener           Listener component on which to set the parameters
+    * @param in_OcclusionValues        Occlusion values to set for multiple positions
+    * @param in_ObstructionValues    Obstruction values to set for multiple positions
+    * @return Result from ak sound engine
+    */
+    AKRESULT SetMultipleObstructionAndOcclusion(
+        const UAkComponent * const in_pEmitter,
+        const UAkComponent* const in_pListener,
+        TArray<float> in_ObstructionValues,
+        TArray<float> in_OcclusionValues
+    );
+
+AKRESULT SendPluginCustomGameData(AkUniqueID in_busID, AkGameObjectID in_busObjectID, AkPluginType in_eType, AkUInt32 in_uCompanyID, AkUInt32 in_uPluginID, const void *in_pData, AkUInt32 in_uSizeInBytes);
+};

@@ -72,3 +72,11 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# UE Wwise plugin
+Plugins/Wwise/*
+
+# Wwise local state
+NPCAI_WwiseProject/.cache/*
+NPCAI_WwiseProject/*.validationcache
+NPCAI_WwiseProject/*.wsettings

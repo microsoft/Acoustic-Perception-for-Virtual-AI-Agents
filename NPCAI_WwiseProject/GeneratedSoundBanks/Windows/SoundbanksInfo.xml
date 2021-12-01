@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\UE Projects\NPCAI\NPCAI_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\UE Projects\NPCAI\NPCAI_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\UE Projects\NPCAI\NPCAI_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\UE Projects\NPCAI\NPCAI_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3696242174">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="965806348" Name="Verb_Z_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus"/>
+				<AuxBus Id="1267922468" Name="Verb_Z_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus"/>
+				<AuxBus Id="1803359386" Name="Verb_X_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus"/>
+				<AuxBus Id="2559008093" Name="Verb_Y_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus"/>
+				<AuxBus Id="2917229290" Name="Reverb_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus"/>
+				<AuxBus Id="3230458499" Name="Verb_Y_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus"/>
+				<AuxBus Id="3768545922" Name="Verb_X_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="2037782811" Language="SFX" Hash="1456180216">
+			<ObjectPath>\SoundBanks\Default Work Unit\SB_D756CCC97D5343A3882AD4C04FC30161</ObjectPath>
+			<ShortName>SB_D756CCC97D5343A3882AD4C04FC30161</ShortName>
+			<Path>SB_D756CCC97D5343A3882AD4C04FC30161.bnk</Path>
+			<IncludedEvents>
+				<Event Id="500558109" Name="Play0" ObjectPath="\Events\Default Work Unit\Play0">
+					<ExcludedMemoryFiles>
+						<File Id="609314588" Language="SFX">
+							<ShortName>VOCALS_bush_birds_multiple_chirp_loop_01.wav</ShortName>
+							<Path>SFX\VOCALS_bush_birds_multiple_chirp_loop_01_D79FB2B7.wem</Path>
+						</File>
+					</ExcludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="2164404851" Language="SFX" Hash="4282401872">
+			<ObjectPath>\SoundBanks\Default Work Unit\SB_12A055750D1844D4A0892EF0CD746ADE</ObjectPath>
+			<ShortName>SB_12A055750D1844D4A0892EF0CD746ADE</ShortName>
+			<Path>SB_12A055750D1844D4A0892EF0CD746ADE.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="1803359386" Name="Verb_X_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus"/>
+				<AuxBus Id="2917229290" Name="Reverb_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="2356703705" Language="SFX" Hash="2935126014">
+			<ObjectPath>\SoundBanks\Default Work Unit\SB_9938209DEA7A4FC18EE1411A19BBEE37</ObjectPath>
+			<ShortName>SB_9938209DEA7A4FC18EE1411A19BBEE37</ShortName>
+			<Path>SB_9938209DEA7A4FC18EE1411A19BBEE37.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3895011010" Name="StopSource0" ObjectPath="\Events\Default Work Unit\StopSource0"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3037353144" Language="SFX" Hash="2895311142">
+			<ObjectPath>\SoundBanks\Default Work Unit\SB_5320C3A94F5C45B388C55FF7C1EFDF60</ObjectPath>
+			<ShortName>SB_5320C3A94F5C45B388C55FF7C1EFDF60</ShortName>
+			<Path>SB_5320C3A94F5C45B388C55FF7C1EFDF60.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="2559008093" Name="Verb_Y_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus"/>
+				<AuxBus Id="2917229290" Name="Reverb_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="3126412141" Language="SFX" Hash="2676273727">
+			<ObjectPath>\SoundBanks\Default Work Unit\SB_7CB90AA2921D4D90823C58AC4FA5775B</ObjectPath>
+			<ShortName>SB_7CB90AA2921D4D90823C58AC4FA5775B</ShortName>
+			<Path>SB_7CB90AA2921D4D90823C58AC4FA5775B.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="965806348" Name="Verb_Z_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus"/>
+				<AuxBus Id="1267922468" Name="Verb_Z_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus"/>
+				<AuxBus Id="1803359386" Name="Verb_X_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus"/>
+				<AuxBus Id="2559008093" Name="Verb_Y_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus"/>
+				<AuxBus Id="2917229290" Name="Reverb_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus"/>
+				<AuxBus Id="3230458499" Name="Verb_Y_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus"/>
+				<AuxBus Id="3768545922" Name="Verb_X_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="1235078966">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="500558109" Name="Play0" ObjectPath="\Events\Default Work Unit\Play0">
+					<IncludedMemoryFiles>
+						<File Id="609314588" Language="SFX">
+							<ShortName>VOCALS_bush_birds_multiple_chirp_loop_01.wav</ShortName>
+							<Path>SFX\VOCALS_bush_birds_multiple_chirp_loop_01_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3895011010" Name="StopSource0" ObjectPath="\Events\Default Work Unit\StopSource0"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3640719096" Language="SFX" Hash="3386193875">
+			<ObjectPath>\SoundBanks\Default Work Unit\SB_4DEC854323D0467FB0713FC0A6702852</ObjectPath>
+			<ShortName>SB_4DEC854323D0467FB0713FC0A6702852</ShortName>
+			<Path>SB_4DEC854323D0467FB0713FC0A6702852.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="2917229290" Name="Reverb_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus"/>
+				<AuxBus Id="3230458499" Name="Verb_Y_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="3753778647" Language="SFX" Hash="1458591702">
+			<ObjectPath>\SoundBanks\Default Work Unit\SB_55FF96AF6D7343858E6D32D0104D55D3</ObjectPath>
+			<ShortName>SB_55FF96AF6D7343858E6D32D0104D55D3</ShortName>
+			<Path>SB_55FF96AF6D7343858E6D32D0104D55D3.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="2917229290" Name="Reverb_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus"/>
+				<AuxBus Id="3768545922" Name="Verb_X_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="4264900555" Language="SFX" Hash="2643889044">
+			<ObjectPath>\SoundBanks\Default Work Unit\SB_11B84CCF08EE42C4990591358E7816BE</ObjectPath>
+			<ShortName>SB_11B84CCF08EE42C4990591358E7816BE</ShortName>
+			<Path>SB_11B84CCF08EE42C4990591358E7816BE.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="1267922468" Name="Verb_Z_Plus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus"/>
+				<AuxBus Id="2917229290" Name="Reverb_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="4271260892" Language="SFX" Hash="1437436810">
+			<ObjectPath>\SoundBanks\Default Work Unit\SB_0F83633CE0B0406FB81E676B51F6D2CB</ObjectPath>
+			<ShortName>SB_0F83633CE0B0406FB81E676B51F6D2CB</ShortName>
+			<Path>SB_0F83633CE0B0406FB81E676B51F6D2CB.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="965806348" Name="Verb_Z_Minus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus"/>
+				<AuxBus Id="2917229290" Name="Reverb_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Bus"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

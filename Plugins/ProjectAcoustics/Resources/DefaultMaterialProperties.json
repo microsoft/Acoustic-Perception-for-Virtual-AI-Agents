@@ -1,0 +1,65 @@
+{
+	"Comment": "This file provides acoustic absorption coefficients for different material names. Do not provide duplicate names. Name a material in the sequence <base material> <specialization> <specialization>... separated by whitespaces. IMPORTANT: Do not start material name with the string: <Reserved...>. Using it anywhere except the start is OK. The particular coefficients here are somewhere between the absorptivity at 1 kHz and the average absorptivity over 500 Hz to 4000 Hz. Most of the list is derived from M. David Egan's book titled Architectural Acoustics, page 52 & 53. The EquivalenceList is used to provide other possible equivalent names for the same material properties. If you want to add an object's properties to this list, which is generally discouraged, rather than adding a material, the EquivalenceList is the right way to do it. For example, consider Awning below, which uses the right kind of cloth. As a further example, if we want a special awning cloth, add a material named <cloth awning> and NOT a material named <awning>.",
+
+	"CoefficientList": 
+	[
+		{"Name":"brick unglazed",              "Absorptivity":0.04},
+		{"Name":"brick painted",               "Absorptivity":0.02},
+		{"Name":"gypsum board",                "Absorptivity":0.06},
+		{"Name":"concrete rough",              "Absorptivity":0.06},
+		{"Name":"concreteblock painted",       "Absorptivity":0.07},
+		{"Name":"glass heavy pane",            "Absorptivity":0.03},
+		{"Name":"glass window",                "Absorptivity":0.12},
+		{"Name":"tile glazed",                 "Absorptivity":0.01},
+		{"Name":"plaster brick",               "Absorptivity":0.03},
+		{"Name":"plaster concreteblock",       "Absorptivity":0.05},
+		{"Name":"wood plywood panel",          "Absorptivity":0.1},
+		{"Name":"steel",                       "Absorptivity":0.1},
+		{"Name":"wood panel",                  "Absorptivity":0.09},
+
+		{"Name":"sand",                        "Absorptivity":0.40},
+		{"Name":"concreteblock coarse",        "Absorptivity":0.35},
+		{"Name":"drapery light",               "Absorptivity":0.15},
+		{"Name":"drapery medium",              "Absorptivity":0.55},
+		{"Name":"drapery heavy",               "Absorptivity":0.60},
+		{"Name":"fiberboard shreddedwood",     "Absorptivity":0.60},
+		{"Name":"polystyrene",                 "Absorptivity":0.15},
+		{"Name":"rubber",                      "Absorptivity":0.15},
+		{"Name":"leather",                     "Absorptivity":0.15},
+		{"Name":"asphalt",                     "Absorptivity":0.2},
+
+		{"Name":"concrete painted",            "Absorptivity":0.02},
+		{"Name":"wood",                        "Absorptivity":0.07},
+		{"Name":"wood varnished",              "Absorptivity":0.03},
+		{"Name":"carpet heavy",                "Absorptivity":0.35},
+
+		{"Name":"gravel",                      "Absorptivity":0.7},
+		{"Name":"grass",                       "Absorptivity":0.7},
+		{"Name":"snow fresh",                  "Absorptivity":0.9},
+		{"Name":"soil rough",                  "Absorptivity":0.45},
+		{"Name":"soil packed",                 "Absorptivity":0.2},
+		{"Name":"wood tree",                   "Absorptivity":0.17},
+		{"Name":"water surface",               "Absorptivity":0.01},
+
+		{"Name":"concrete",                    "Absorptivity":0.04},
+		{"Name":"glass",                       "Absorptivity":0.06},
+    {"Name":"plastic",                     "Absorptivity":0.03},
+		{"Name":"Default",                     "Absorptivity":0.1}
+	],
+	
+	"EquivalenceList": 
+	[
+		{"BaseName":"gypsum board",            "EquivalentTo":["drywall"]},
+		{"BaseName":"tile glazed",             "EquivalentTo":["marble"]},
+		{"BaseName":"drapery light",           "EquivalentTo":["drapery", "cloth", "awning", "fabric", "glove", "tent"]},
+		{"BaseName":"wood tree",               "EquivalentTo":["foliage", "leaves", "leaf", "plant", "vine", "tree"]},
+		{"BaseName":"steel",                   "EquivalentTo":["metal", "chain", "trunk"]},
+		{"BaseName":"water surface",           "EquivalentTo":["ice", "snow packed", "food", "flesh"]},
+		{"BaseName":"concrete painted",        "EquivalentTo":["stone", "rock", "pebble"]},
+		{"BaseName":"rubber",                  "EquivalentTo":["tire"]},
+		{"BaseName":"plastic",                 "EquivalentTo":["suitcase"]},
+		{"BaseName":"wood",                    "EquivalentTo":["paper", "cardboard", "wallpaper"]},
+		{"BaseName":"soil packed",             "EquivalentTo":["dirt", "mud"]},
+		{"BaseName":"glass heavy pane",        "EquivalentTo":["porcelain", "chandelier"]}
+	]
+}

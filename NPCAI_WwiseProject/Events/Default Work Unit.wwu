@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{38715A7A-5441-42D0-BB04-C0B415611786}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{38715A7A-5441-42D0-BB04-C0B415611786}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayNoise" ID="{7D1890AD-4852-41DE-8176-55ADB75217A0}">
+					<ChildrenList>
+						<Action Name="" ID="{9CABADFB-34D5-4553-9F4F-07622EF0226E}" ShortID="787223126">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NoiseContainer" ID="{06195B6C-3DC1-4745-B6D4-4657B4C8D91D}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="NpcGun" ID="{8201C070-D1EF-443F-A396-D4017CF75D6E}">
+					<ChildrenList>
+						<Action Name="" ID="{8B741E7E-8F12-47F5-A772-C36829EACFAC}" ShortID="684024156">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NPC Gun" ID="{D74D59AE-75AB-423C-9AF1-B6436C279252}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BelicaFootstep" ID="{331A8AE0-3615-4AEA-9CDF-5689DD00F8EE}">
+					<ChildrenList>
+						<Action Name="" ID="{783153E0-E5D7-4786-BD23-07ABC3742F3A}" ShortID="910399506">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BelicaFootsteps" ID="{E4F9FC7C-2CCD-4E4D-871A-81F18A40BC41}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Phones" ID="{017D7B77-6EFE-4CCD-B6D5-F8645D2EED33}">
+					<ChildrenList>
+						<Action Name="" ID="{A3E81E67-CF1E-4642-A54F-76790357CF76}" ShortID="14977596">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Phones" ID="{6C959A93-3D76-447C-BFB7-E674F640D603}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AMB_Marquee" ID="{E0ED13E2-C08E-47AC-8BA8-26E63DB7841E}">
+					<ChildrenList>
+						<Action Name="" ID="{ED58C91F-D9A9-4989-92D0-EB9D72BBBCC0}" ShortID="622827119">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Marquee" ID="{86938C16-8C28-4E5D-83BE-B9DE38F84C6C}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AMB_Atrium" ID="{D2DF6D54-A578-44BB-BAD4-B6E2BDC1C300}">
+					<ChildrenList>
+						<Action Name="" ID="{DF349888-C443-46F7-99D8-D59DE4808254}" ShortID="164793033">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Atrium" ID="{7F515F9E-71F3-4CA8-8083-1C74EB2F8FB9}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="AMB_Room" ID="{02FC0AA1-2BFF-40C3-8011-6FFBFDEF060C}">
+					<ChildrenList>
+						<Action Name="" ID="{0581E63F-E642-49E4-B571-DC600EE2D0C9}" ShortID="696990280">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Room" ID="{612C6F24-ACD3-4A4E-AD31-0EB639272A89}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Fence" ID="{AF1F172A-C714-4E39-BDD3-E054EB6A4E40}">
+					<ChildrenList>
+						<Action Name="" ID="{0C5AE3B4-7DD7-47DB-B691-574A15213B12}" ShortID="18542450">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fence" ID="{8465E049-EB15-4CFB-B366-B1A54E2869CC}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="BelicaDialogue" ID="{053B6F3A-4987-456F-A7A4-9AB527556F75}">
+					<ChildrenList>
+						<Action Name="" ID="{0E2BFAE3-9766-4284-AB71-9D5477251F95}" ShortID="1020313065">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BelicaDialogue" ID="{A41ABD83-6B30-41A6-9925-1845ED83EDBF}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MurdockDialogue" ID="{6D024968-0962-4FB6-B535-CA27F0268449}">
+					<ChildrenList>
+						<Action Name="" ID="{FE529EA8-CA06-47F7-90C5-FA3B663CB779}" ShortID="510466959">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MurdockDialogue" ID="{282822C8-E057-442C-959D-8183E10D1955}" WorkUnitID="{02EC532C-EC8D-450C-BD18-E1579295686B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

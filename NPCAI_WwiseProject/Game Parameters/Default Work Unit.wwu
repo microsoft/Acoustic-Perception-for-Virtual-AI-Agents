@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{778D93EB-1160-4D06-BBF4-4AA7B893ADB5}" SchemaVersion="103">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{778D93EB-1160-4D06-BBF4-4AA7B893ADB5}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="NoiseVolume" ID="{881B5E7D-861F-46BF-A32D-9A4E9EFE29D0}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

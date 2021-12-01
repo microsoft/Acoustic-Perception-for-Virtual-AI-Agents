@@ -1,0 +1,146 @@
+Event	ID	Name			Wwise Object Path	Notes
+	283095492	NpcGun			\Default Work Unit\NpcGun	
+	500558108	Play1			\Default Work Unit\Play1	
+	500558109	Play0			\Default Work Unit\Play0	
+	500558110	Play3			\Default Work Unit\Play3	
+	500558111	Play2			\Default Work Unit\Play2	
+	1213349991	PlayGrenade			\Default Work Unit\PlayGrenade	
+	1729134568	Fence			\Default Work Unit\Fence	
+	2738544226	AMB_Marquee			\Default Work Unit\AMB_Marquee	
+	3142500003	PlayNoise			\Default Work Unit\PlayNoise	
+	3202361783	AMB_Room			\Default Work Unit\AMB_Room	
+	3284032718	Phones			\Default Work Unit\Phones	
+	3895011010	StopSource0			\Default Work Unit\StopSource0	
+	4096831364	AMB_Atrium			\Default Work Unit\AMB_Atrium	
+	4124152237	BelicaFootstep			\Default Work Unit\BelicaFootstep	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	680248023	NoiseVolume			\Default Work Unit\NoiseVolume	
+	1747352569	Source0Vol			\Default Work Unit\Source0Vol	
+	1863699187	Source2Vol			\Default Work Unit\Source2Vol	
+	3029071442	Source1Vol			\Default Work Unit\Source1Vol	
+	3684861812	Source3Vol			\Default Work Unit\Source3Vol	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	158493456	ZP_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Short	
+	331376316	ZP_XLong			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_XLong	
+	342409997	YP_XLong			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_XLong	
+	484670024	YM_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Med	
+	774778998	XP_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Short	
+	894421048	ZP_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Med	
+	897077186	XP_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Med	
+	924616876	YM_XLong			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_XLong	
+	965806348	Verb_Z_Minus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus	
+	1142749239	ZM_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Long	
+	1166486403	XM_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Med	
+	1267922468	Verb_Z_Plus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus	
+	1727306497	XM_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Long	
+	1803359386	Verb_X_Plus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus	
+	1906930016	YM_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Long	
+	1957142939	XM_XLong			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_XLong	
+	1961877785	YP_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Short	
+	2235405312	YM_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Short	
+	2319091066	XP_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Long	
+	2485735536	ZP_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Long	
+	2537277821	ZM_XLong			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_XLong	
+	2559008093	Verb_Y_Plus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus	
+	2917229290	Reverb_Bus			\Default Work Unit\Master Audio Bus\Reverb_Bus	
+	3022409730	XP_XLong			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_XLong	
+	3070963527	YP_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Long	
+	3184958345	ZM_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Short	
+	3230458499	Verb_Y_Minus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus	
+	3768545922	Verb_X_Minus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus	
+	3929899537	ZM_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Med	
+	4150984887	XM_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Short	
+	4257713601	YP_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Med	
+
+Effect plug-ins	ID	Name	Type				Notes
+	388735832	YPMed	Wwise Convolution Reverb			
+	408238269	XPMed	Wwise Convolution Reverb			
+	481574105	ZPLong	Wwise Convolution Reverb			
+	744032094	XMShort	Wwise Convolution Reverb			
+	865790940	YPXLong	Wwise Convolution Reverb			
+	1094823952	YPLong	Wwise Convolution Reverb			
+	1117365552	YPShort	Wwise Convolution Reverb			
+	1136217730	XMLong	Wwise Convolution Reverb			
+	1283663003	YMMed	Wwise Convolution Reverb			
+	1343163939	XPLong	Wwise Convolution Reverb			
+	1453662323	ZPXLong	Wwise Convolution Reverb			
+	1746857437	XPShort	Wwise Convolution Reverb			
+	1852053065	YMLong	Wwise Convolution Reverb			
+	1895415498	XMXLong	Wwise Convolution Reverb			
+	2593679500	ZMXLong	Wwise Convolution Reverb			
+	2696262874	XMMed	Wwise Convolution Reverb			
+	2741166563	YMXLong	Wwise Convolution Reverb			
+	2970166027	ZPMed	Wwise Convolution Reverb			
+	3223964767	YMShort	Wwise Convolution Reverb			
+	3367150784	ZMLong	Wwise Convolution Reverb			
+	3601611816	ZMMed	Wwise Convolution Reverb			
+	3601721137	XPXLong	Wwise Convolution Reverb			
+	3904468192	ZMShort	Wwise Convolution Reverb			
+	4281825519	ZPShort	Wwise Convolution Reverb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	11257481	Marquee	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\AMB_UnrealMarquee_LP_4E642330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\AMB\Marquee\Marquee		1267208
+	24187209	FOOTSTEPS_7	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_7_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_7		190976
+	53638205	FOOTSTEPS_3	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_3_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_3		190622
+	110120509	Guns	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FIREARMS_LMG_UltimaxMK3_fullAuto_01_close1_4E642330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\MachineGun\Guns		1625064
+	113392297	Grenade3	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\EXPLOSIONS_grenade_01a_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\Grenade\Grenade3		262364
+	138599114	FOOTSTEPS_9	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_9_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_9		191348
+	168146101	Fence	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\SFX_Fence_LP_4E642330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\Fence\Fence		1157026
+	186296216	FOOTSTEPS_17	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_17_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_17		190016
+	192205761	Dogs	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\VOCALS_dog_bark_fighting_03_close_4E642330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\Dogs\Dogs		1636978
+	208603314	FOOTSTEPS_13	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_13_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_13		189764
+	221148152	Grenade1	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\EXPLOSIONS_tannerite_massive_01_AKG_D112_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\Grenade\Grenade1		480096
+	320914111	FOOTSTEPS_10	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_10_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_10		191442
+	401220162	Atrium	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\AMB_Bed_HighRise_Atrium_LP_4E642330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\AMB\Atrium\Atrium		5675272
+	418664433	FOOTSTEPS_2	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_2_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_2		190522
+	431205539	FOOTSTEPS_1	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_1_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_1		190432
+	510757331	FOOTSTEPS_18	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_18_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_18		190710
+	609314588	Birds	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\VOCALS_bush_birds_multiple_chirp_loop_01_4E642330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\Birds\Birds		5816416
+	671321834	FOOTSTEPS_4	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_4_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_4		190262
+	677980285	Phones	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\SFX_PhoneBox_LP_4E642330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\Phones\Phones		324772
+	713873836	FOOTSTEPS_20	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_20_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_20		171648
+	782505739	Traffic	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Voices\English(US)\URBAN_traffic_seattle_loop_05_4E642330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Noise Floor\NoiseContainer\Traffic		5760096
+	787748069	Tank	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\TANK_FV4201_Chieftain_crush_car_03_tread_mono_4E642330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\Tank\Tank		1964226
+	788376754	FOOTSTEPS_6	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_6_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_6		190712
+	818875886	FOOTSETPS_5	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSETPS_5_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSETPS_5		191214
+	827288839	Room	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\AMB_Bed_HighRise_Room_LP_4E642330.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\AMB\Room\Room		4348564
+	836382871	FOOTSTEPS_14	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_14_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_14		189506
+	841261362	FOOTSTEPS_15	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_15_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_15		185998
+	858426182	Grenade2	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\EXPLOSIONS_tannerite_huge_01_AKG_D112_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\Grenade\Grenade2		388862
+	891205128	Grenade4	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\EXPLOSIONS_grenade_01b_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\Grenade\Grenade4		286562
+	892071037	Gun	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FIREARMS_MG_M60_fire_01_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\NPC Gun\Gun		127832
+	914734721	FOOTSTEPS_12	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_12_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_12		189214
+	963321157	FOOTSTEPS_8	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_8_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_8		190522
+	1023027584	FOOTSTEPS_19	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\SFX\FOOTSTEPS_19_BFB259A6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Point Sources\BelicaFootsteps\FOOTSTEPS_19		186894
+
+Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
+	13786564	ZMLong	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_0_Long_9E0C8D71.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ZMLong		309008
+	39316127	XMXLong	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_2_ExtraLong_4997C22E.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\XMXLong		581968
+	54641571	YMShort	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_3_Short_DD863DCF.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\YMShort		117424
+	152739815	YPShort	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_4_Short_5B952E14.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\YPShort		119216
+	203626024	XMShort	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_2_Short_7A2DACC2.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\XMShort		120304
+	223650641	XMMed	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_2_Medium_2F441346.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\XMMed		213472
+	323768089	ZMShort	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_0_Short_35C6C2C0.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ZMShort		119408
+	363248190	YMMed	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_3_Medium_3AF163D9.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\YMMed		213728
+	365327050	ZMMed	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_0_Medium_F92F4324.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ZMMed		214240
+	465137372	YMLong	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_3_Long_0D3ADD64.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\YMLong		303760
+	531663507	ZPLong	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_5_Long_F8A8B456.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ZPLong		307536
+	579394075	XMLong	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_2_Long_E36F3EC3.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\XMLong		304848
+	583738772	YPLong	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_4_Long_4691C485.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\YPLong		307408
+	588916144	YPXLong	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_4_ExtraLong_021136C0.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\YPXLong		589024
+	602072960	ZMXLong	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_0_ExtraLong_2CDABEC4.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ZMXLong		591648
+	615059383	XPXLong	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_1_ExtraLong_6A8CAEF5.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\XPXLong		590160
+	618936270	ZPXLong	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_5_ExtraLong_2449D101.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ZPXLong		593120
+	641514630	XPLong	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_1_Long_542B6032.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\XPLong		307600
+	705147274	YMXLong	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_3_ExtraLong_46D78F8F.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\YMXLong		590160
+	707834467	XPMed	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_1_Medium_E52F1DC7.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\XPMed		212256
+	813784345	ZPShort	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_5_Short_41D1BDD9.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ZPShort		116336
+	820154930	XPShort	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_1_Short_F025CAC5.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\XPShort		119152
+	832317886	ZPMed	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_5_Medium_AAEABF23.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\ZPMed		213984
+	1060578637	YPMed	D:\UE Projects\NPC_HighRise\ShooterGame\NPCAI_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\IR_Mono_4_Medium_EA1511B0.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\YPMed		213152
+

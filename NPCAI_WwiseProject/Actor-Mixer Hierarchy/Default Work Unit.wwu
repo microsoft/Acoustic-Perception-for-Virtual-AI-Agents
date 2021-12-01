@@ -1,0 +1,2597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{02EC532C-EC8D-450C-BD18-E1579295686B}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{02EC532C-EC8D-450C-BD18-E1579295686B}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Point Sources" ID="{F221903D-EDDB-44BD-940D-C9E7E09FFAC5}" ShortID="932113757">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="RealisticAtten" ID="{74EC732E-4192-4FB2-BE29-D8EF4EADD7A2}" WorkUnitID="{4517EDB4-F234-4B61-A967-DD9EC5126B7B}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="NPC Gun" ID="{D74D59AE-75AB-423C-9AF1-B6436C279252}" ShortID="102502723">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-25</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Gun" ID="{7DDA9521-C458-46BC-AC84-63168D314ADF}" ShortID="698715096">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FIREARMS_MG_M60_fire_01" ID="{2AB9C7FB-6FE8-4D9F-B192-EC7C65A99276}">
+											<Language>SFX</Language>
+											<AudioFile>FIREARMS_MG_M60_fire_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="892071037"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FIREARMS_MG_M60_fire_01" ID="{2AB9C7FB-6FE8-4D9F-B192-EC7C65A99276}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="Gun" ID="{7DDA9521-C458-46BC-AC84-63168D314ADF}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="BelicaFootsteps" ID="{E4F9FC7C-2CCD-4E4D-871A-81F18A40BC41}" ShortID="1026399303">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{65A0DF99-9425-4920-965B-65E0B5F9FAD7}" ShortID="410969763">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="NoiseVolume" ID="{881B5E7D-861F-46BF-A32D-9A4E9EFE29D0}" WorkUnitID="{778D93EB-1160-4D06-BBF4-4AA7B893ADB5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5AE87AAD-6DB6-47A7-9AD6-ECBADAF14283}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FOOTSETPS_5" ID="{A5545E57-A0F7-4F36-833E-F9050BEC6DDC}" ShortID="899009919">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSETPS_5" ID="{65A8CCCA-0D57-4848-B32A-9BA0ADACFD16}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSETPS_5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="818875886"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSETPS_5" ID="{65A8CCCA-0D57-4848-B32A-9BA0ADACFD16}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_1" ID="{72723617-AE0B-4C5A-B48F-813A4693CBA6}" ShortID="694434429">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_1" ID="{0C8A31B9-C37F-471B-A796-D37E8DC9841C}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="431205539"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_1" ID="{0C8A31B9-C37F-471B-A796-D37E8DC9841C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_2" ID="{3B3D22AC-F3CE-468D-A306-C3488CF8CBB0}" ShortID="931610544">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_2" ID="{4E9D3DB9-1ECD-466C-91D4-BE50EE067CD2}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="418664433"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_2" ID="{4E9D3DB9-1ECD-466C-91D4-BE50EE067CD2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_3" ID="{A4B692C6-3DA1-4EB7-9FAD-67F2CAAA7832}" ShortID="5905947">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_3" ID="{56262698-5484-4189-853D-DA41035A40F9}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="53638205"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_3" ID="{56262698-5484-4189-853D-DA41035A40F9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_4" ID="{2A8AA9E4-4804-4600-AE48-A230C95E2261}" ShortID="833239944">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_4" ID="{C545193A-1D62-4B61-9E73-289B009CD5B0}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="671321834"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_4" ID="{C545193A-1D62-4B61-9E73-289B009CD5B0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_6" ID="{6F133C0B-3237-4FD1-87B9-CD4809FBC2A0}" ShortID="710987611">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_6" ID="{7AA52A76-45D5-469A-8EC3-1C7669985178}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_6.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="788376754"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_6" ID="{7AA52A76-45D5-469A-8EC3-1C7669985178}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_7" ID="{57F5E686-D2C9-4436-9008-5D81A4698FEB}" ShortID="736100000">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_7" ID="{38FC222E-F5B2-4AB6-8365-EEDFFC375AC1}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_7.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="24187209"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_7" ID="{38FC222E-F5B2-4AB6-8365-EEDFFC375AC1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_8" ID="{9ABB3DF1-815C-4740-AC8C-6B7D9EFAD810}" ShortID="111831547">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_8" ID="{11F2C24F-B76C-4182-9E8A-387F67AAAF5B}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_8.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="963321157"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_8" ID="{11F2C24F-B76C-4182-9E8A-387F67AAAF5B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_9" ID="{F3D9AB53-F9A7-48E5-B797-498066FA4065}" ShortID="141628926">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_9" ID="{777BD67F-4132-48D2-95DF-5182870E4060}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_9.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="138599114"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_9" ID="{777BD67F-4132-48D2-95DF-5182870E4060}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_10" ID="{8123C005-239B-4393-9394-57BBD65C19FE}" ShortID="1059427312">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_10" ID="{63B98675-1D0A-4D53-8D09-2E942596E58B}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="320914111"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_10" ID="{63B98675-1D0A-4D53-8D09-2E942596E58B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_12" ID="{3780A5C3-9853-4557-AD92-C61BB14BFA15}" ShortID="844704596">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_12" ID="{9C84FF26-52E2-4B90-90C4-9E47CF814FBE}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_12.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="914734721"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_12" ID="{9C84FF26-52E2-4B90-90C4-9E47CF814FBE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_13" ID="{3CA2E800-7762-424A-BB2B-384A8DC842E3}" ShortID="869406718">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_13" ID="{60B8673B-EFA5-4200-B03F-A3324938D47B}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_13.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="208603314"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_13" ID="{60B8673B-EFA5-4200-B03F-A3324938D47B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_14" ID="{84EB36DB-4D3C-4CB8-887A-94568FEED3E4}" ShortID="960942383">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_14" ID="{C00278AC-4013-40F7-A63B-0C5406EE99A5}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_14.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="836382871"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_14" ID="{C00278AC-4013-40F7-A63B-0C5406EE99A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_15" ID="{5C7ED1CA-5028-4AB8-B167-54545D427F5B}" ShortID="991392611">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_15" ID="{D9EA4961-FBDE-4BD6-ABCD-1BAF90D6F8A8}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_15.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="841261362"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_15" ID="{D9EA4961-FBDE-4BD6-ABCD-1BAF90D6F8A8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_17" ID="{427EBC1A-960D-468A-83F1-8F2291EA01A4}" ShortID="349973987">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_17" ID="{20CDD6E5-E264-4A03-87E6-0E7394FE17EA}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_17.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="186296216"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_17" ID="{20CDD6E5-E264-4A03-87E6-0E7394FE17EA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_18" ID="{8B53EF6A-8CEF-44E4-93A1-1918506ECEE1}" ShortID="982652292">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_18" ID="{6C217B08-05FD-4178-B1A7-13CA12354316}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_18.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="510757331"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_18" ID="{6C217B08-05FD-4178-B1A7-13CA12354316}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_19" ID="{75792A97-79D8-46D2-A8D4-4F9BFC5A7C40}" ShortID="102386847">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_19" ID="{60F0BA5B-C941-43A9-9A8F-4FC72C26EED5}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_19.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1023027584"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_19" ID="{60F0BA5B-C941-43A9-9A8F-4FC72C26EED5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FOOTSTEPS_20" ID="{6CE5FA01-2D52-47C8-B665-0C543B1534DF}" ShortID="41312988">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FOOTSTEPS_20" ID="{FEAA7D16-B47E-48F2-B493-F2F9CC0FABF4}">
+											<Language>SFX</Language>
+											<AudioFile>FOOTSTEPS_20.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="713873836"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="FOOTSTEPS_20" ID="{FEAA7D16-B47E-48F2-B493-F2F9CC0FABF4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="FOOTSETPS_5" ID="{A5545E57-A0F7-4F36-833E-F9050BEC6DDC}"/>
+								<ItemRef Name="FOOTSTEPS_1" ID="{72723617-AE0B-4C5A-B48F-813A4693CBA6}"/>
+								<ItemRef Name="FOOTSTEPS_2" ID="{3B3D22AC-F3CE-468D-A306-C3488CF8CBB0}"/>
+								<ItemRef Name="FOOTSTEPS_3" ID="{A4B692C6-3DA1-4EB7-9FAD-67F2CAAA7832}"/>
+								<ItemRef Name="FOOTSTEPS_4" ID="{2A8AA9E4-4804-4600-AE48-A230C95E2261}"/>
+								<ItemRef Name="FOOTSTEPS_6" ID="{6F133C0B-3237-4FD1-87B9-CD4809FBC2A0}"/>
+								<ItemRef Name="FOOTSTEPS_7" ID="{57F5E686-D2C9-4436-9008-5D81A4698FEB}"/>
+								<ItemRef Name="FOOTSTEPS_8" ID="{9ABB3DF1-815C-4740-AC8C-6B7D9EFAD810}"/>
+								<ItemRef Name="FOOTSTEPS_9" ID="{F3D9AB53-F9A7-48E5-B797-498066FA4065}"/>
+								<ItemRef Name="FOOTSTEPS_10" ID="{8123C005-239B-4393-9394-57BBD65C19FE}"/>
+								<ItemRef Name="FOOTSTEPS_12" ID="{3780A5C3-9853-4557-AD92-C61BB14BFA15}"/>
+								<ItemRef Name="FOOTSTEPS_13" ID="{3CA2E800-7762-424A-BB2B-384A8DC842E3}"/>
+								<ItemRef Name="FOOTSTEPS_14" ID="{84EB36DB-4D3C-4CB8-887A-94568FEED3E4}"/>
+								<ItemRef Name="FOOTSTEPS_15" ID="{5C7ED1CA-5028-4AB8-B167-54545D427F5B}"/>
+								<ItemRef Name="FOOTSTEPS_17" ID="{427EBC1A-960D-468A-83F1-8F2291EA01A4}"/>
+								<ItemRef Name="FOOTSTEPS_18" ID="{8B53EF6A-8CEF-44E4-93A1-1918506ECEE1}"/>
+								<ItemRef Name="FOOTSTEPS_19" ID="{75792A97-79D8-46D2-A8D4-4F9BFC5A7C40}"/>
+								<ItemRef Name="FOOTSTEPS_20" ID="{6CE5FA01-2D52-47C8-B665-0C543B1534DF}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Phones" ID="{6C959A93-3D76-447C-BFB7-E674F640D603}" ShortID="882146635">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{0E6D79C5-88CB-4C09-8CE2-E42BC8940870}" ShortID="904051617">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="NoiseVolume" ID="{881B5E7D-861F-46BF-A32D-9A4E9EFE29D0}" WorkUnitID="{778D93EB-1160-4D06-BBF4-4AA7B893ADB5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{7520581D-5CC3-45F6-8369-4685309B7688}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-96</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Phones" ID="{D7117D2A-FBDA-45AB-9E65-8E51AE230549}" ShortID="850217344">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_PhoneBox_LP" ID="{D90E7676-16D4-4768-8CD8-41377BDF8338}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_PhoneBox_LP.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="677980285"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_PhoneBox_LP" ID="{D90E7676-16D4-4768-8CD8-41377BDF8338}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="Phones" ID="{D7117D2A-FBDA-45AB-9E65-8E51AE230549}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<ActorMixer Name="AMB" ID="{41D361C5-6021-4B84-8131-EA7A982CFC20}" ShortID="132044637">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{ADC42155-1AD8-4330-B2CF-EE6793083E64}" ShortID="50254837">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="NoiseVolume" ID="{881B5E7D-861F-46BF-A32D-9A4E9EFE29D0}" WorkUnitID="{778D93EB-1160-4D06-BBF4-4AA7B893ADB5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{03FFE225-3DAC-4BDD-B3F5-2C1DB62AB3C9}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Marquee" ID="{86938C16-8C28-4E5D-83BE-B9DE38F84C6C}" ShortID="492253061">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Marquee" ID="{69B39D4E-F0A2-4916-9AAF-0E178E2E3A22}" ShortID="83963380">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_UnrealMarquee_LP" ID="{E42627D2-FD29-4C33-8375-A6C3EF773651}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_UnrealMarquee_LP.WAV</AudioFile>
+													<MediaIDList>
+														<MediaID ID="11257481"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_UnrealMarquee_LP" ID="{E42627D2-FD29-4C33-8375-A6C3EF773651}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Marquee" ID="{69B39D4E-F0A2-4916-9AAF-0E178E2E3A22}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Atrium" ID="{7F515F9E-71F3-4CA8-8083-1C74EB2F8FB9}" ShortID="627652344">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Atrium" ID="{EA0412E5-EEDB-4E92-BBEB-B413565DE949}" ShortID="161874334">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Bed_HighRise_Atrium_LP" ID="{7978F91F-4DAB-4209-904A-6A3FBE967F6C}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Bed_HighRise_Atrium_LP.WAV</AudioFile>
+													<MediaIDList>
+														<MediaID ID="401220162"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Bed_HighRise_Atrium_LP" ID="{7978F91F-4DAB-4209-904A-6A3FBE967F6C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Room" ID="{612C6F24-ACD3-4A4E-AD31-0EB639272A89}" ShortID="261295701">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Room" ID="{361DE689-78E0-445F-A021-977782BCAC20}" ShortID="156286814">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Bed_HighRise_Room_LP" ID="{925AAFB8-93A8-4C47-8A4B-5D49E4394946}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Bed_HighRise_Room_LP.WAV</AudioFile>
+													<MediaIDList>
+														<MediaID ID="827288839"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Bed_HighRise_Room_LP" ID="{925AAFB8-93A8-4C47-8A4B-5D49E4394946}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+									<Playlist>
+										<ItemRef Name="Room" ID="{361DE689-78E0-445F-A021-977782BCAC20}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
+						<RandomSequenceContainer Name="Fence" ID="{8465E049-EB15-4CFB-B366-B1A54E2869CC}" ShortID="39981545">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{F997DFC3-5453-4780-A5AE-FD27BDD086F1}" ShortID="270053433">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="NoiseVolume" ID="{881B5E7D-861F-46BF-A32D-9A4E9EFE29D0}" WorkUnitID="{778D93EB-1160-4D06-BBF4-4AA7B893ADB5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{F3348E30-B467-46B0-908E-AE8720AB62A6}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-96</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Fence" ID="{1B4C4A44-A715-49C8-8F7F-1E0606EFC3F8}" ShortID="681732401">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Fence_LP" ID="{E6ABD71A-B2D2-4E9C-8C00-1707FD0CEF33}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Fence_LP.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="168146101"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Fence_LP" ID="{E6ABD71A-B2D2-4E9C-8C00-1707FD0CEF33}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="Fence" ID="{1B4C4A44-A715-49C8-8F7F-1E0606EFC3F8}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="BelicaDialogue" ID="{A41ABD83-6B30-41A6-9925-1845ED83EDBF}" ShortID="969452259">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{74FAB11F-87AD-41D5-A642-1D48F78E25E9}" ShortID="316337032">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="NoiseVolume" ID="{881B5E7D-861F-46BF-A32D-9A4E9EFE29D0}" WorkUnitID="{778D93EB-1160-4D06-BBF4-4AA7B893ADB5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{D53A3839-BEAB-4E6D-9961-F53734092F32}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="LtBelica_Ability_No_010" ID="{393D2158-5F1B-4540-8E24-5FCFA2C6137D}" ShortID="917828905">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Ability_No_010" ID="{B7ACE434-2360-4659-8AD8-05899F0A5D06}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Ability_No_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="914247228"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Ability_No_010" ID="{B7ACE434-2360-4659-8AD8-05899F0A5D06}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Ability_No_020" ID="{92230FE2-86B4-43CD-8165-ECDC252D4B84}" ShortID="834501229">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Ability_No_020" ID="{52807C48-3ABD-4F0A-AF24-A045AD815B66}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Ability_No_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="623673950"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Ability_No_020" ID="{52807C48-3ABD-4F0A-AF24-A045AD815B66}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Ability_No_030" ID="{76AB2EF5-58E4-4291-BDCB-21D6FC228295}" ShortID="151977344">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Ability_No_030" ID="{207AA96C-81BE-4889-B49C-81CACECB970F}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Ability_No_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="306090293"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Ability_No_030" ID="{207AA96C-81BE-4889-B49C-81CACECB970F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Ability_No_040" ID="{2A9826C9-2837-4B6C-B8EC-5CD34148FA41}" ShortID="431832815">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Ability_No_040" ID="{51111653-ECC9-4598-AB88-186E507B2CF0}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Ability_No_040.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="499492066"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Ability_No_040" ID="{51111653-ECC9-4598-AB88-186E507B2CF0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_Boast_010" ID="{EDE2EC1F-1059-4C09-B92E-BACFAF067986}" ShortID="46849621">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_Boast_010" ID="{9923F9FB-9970-4AD6-A230-1577A87D232C}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_Boast_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="688533866"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_Boast_010" ID="{9923F9FB-9970-4AD6-A230-1577A87D232C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_Boast_020" ID="{3758DE32-9669-42E8-9AC8-2726F0B67C18}" ShortID="501002840">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_Boast_020" ID="{EF6132E8-0AD3-447B-897B-D463BCD49630}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_Boast_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="677505914"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_Boast_020" ID="{EF6132E8-0AD3-447B-897B-D463BCD49630}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_Boast_030" ID="{7262CC6C-429A-4AD3-AE54-1EE86FEDD9EC}" ShortID="619527822">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_Boast_030" ID="{256CDA75-CA69-426E-8B92-18605AD22C10}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_Boast_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="269591430"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_Boast_030" ID="{256CDA75-CA69-426E-8B92-18605AD22C10}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_BoastResponse_010" ID="{D0E1AB6B-E7D5-46D6-A3F9-130DD381814C}" ShortID="819984489">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_BoastResponse_010" ID="{0384E34B-9FC2-4FB4-BA21-2F6402DE27CF}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_BoastResponse_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="400975367"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_BoastResponse_010" ID="{0384E34B-9FC2-4FB4-BA21-2F6402DE27CF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_BoastResponse_020" ID="{622F309E-7ADC-4470-9673-C3D4A4764674}" ShortID="199658998">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_BoastResponse_020" ID="{7CF7FA11-D26A-41FA-9597-637103D1D75E}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_BoastResponse_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="342633818"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_BoastResponse_020" ID="{7CF7FA11-D26A-41FA-9597-637103D1D75E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_BoastResponse_030" ID="{297D9A84-E918-431C-A27E-EE7904AEF112}" ShortID="941960758">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_BoastResponse_030" ID="{08D17423-0955-49E8-8EC6-2947582D7632}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_BoastResponse_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="344752990"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_BoastResponse_030" ID="{08D17423-0955-49E8-8EC6-2947582D7632}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_Question_010" ID="{B9F365A6-4C46-44E3-A908-F5293F0DAC5C}" ShortID="611224247">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_Question_010" ID="{3D21D974-F3E5-4359-AC14-EF51DCF72718}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_Question_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="691585998"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_Question_010" ID="{3D21D974-F3E5-4359-AC14-EF51DCF72718}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_Question_020" ID="{088124D4-58A2-458B-AB2B-6E15C7FA447F}" ShortID="966335595">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_Question_020" ID="{BBF03EE3-A400-4C3B-AA16-AC1CA41E24BE}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_Question_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="858812435"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_Question_020" ID="{BBF03EE3-A400-4C3B-AA16-AC1CA41E24BE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_Question_030" ID="{559AF333-1E35-4758-8190-1D2599C7566B}" ShortID="824860367">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_Question_030" ID="{0BE64D67-635F-49FE-96FD-C61396FCDA33}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_Question_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="471357238"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_Question_030" ID="{0BE64D67-635F-49FE-96FD-C61396FCDA33}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_QuestionResponse_010" ID="{0144FF7E-7D32-42C5-8CBD-1080995372E4}" ShortID="9209394">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_QuestionResponse_010" ID="{CC554FC9-343C-4FBF-B20D-0895C7C80595}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_QuestionResponse_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="256986186"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_QuestionResponse_010" ID="{CC554FC9-343C-4FBF-B20D-0895C7C80595}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_QuestionResponse_020" ID="{7A4BE39B-42F6-48B2-92BC-BA97480E6280}" ShortID="321180531">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_QuestionResponse_020" ID="{0D40EB9D-191D-4ABD-A235-9BAEB03F52C9}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_QuestionResponse_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="385055684"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_QuestionResponse_020" ID="{0D40EB9D-191D-4ABD-A235-9BAEB03F52C9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_QuestionResponse_030" ID="{0AB72315-00E8-419D-B84C-8BAC1A32256A}" ShortID="428514345">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_QuestionResponse_030" ID="{47AE4C1C-65D1-40D6-8251-43B114E08818}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_QuestionResponse_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="547037356"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_QuestionResponse_030" ID="{47AE4C1C-65D1-40D6-8251-43B114E08818}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_Shinbi_010" ID="{CC556BAF-D5EF-4D24-B5AF-E4CBD44B2E18}" ShortID="403730970">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_Shinbi_010" ID="{886D6671-FA98-42A7-9A9E-24BE952812B4}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_Shinbi_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="317091100"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_Shinbi_010" ID="{886D6671-FA98-42A7-9A9E-24BE952812B4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_Statement_010" ID="{703B4C6F-4E29-4382-B74B-38E6288C9C10}" ShortID="586259722">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_Statement_010" ID="{33E94155-EB26-4B25-B973-6D7272D5E675}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_Statement_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="462324671"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_Statement_010" ID="{33E94155-EB26-4B25-B973-6D7272D5E675}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_Statement_020" ID="{622CE9D5-5C3A-494B-956F-A8572DF89647}" ShortID="640070480">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_Statement_020" ID="{8082A81B-F511-4C51-844E-26B3B0CC6872}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_Statement_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1001425190"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_Statement_020" ID="{8082A81B-F511-4C51-844E-26B3B0CC6872}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Intro_Statement_030" ID="{7F8A971B-327E-42E8-921B-59541C5C0577}" ShortID="732250055">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Intro_Statement_030" ID="{681A54B4-0017-435E-8E3C-D298FD9EED96}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Intro_Statement_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="547467498"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Intro_Statement_030" ID="{681A54B4-0017-435E-8E3C-D298FD9EED96}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Death_Murdock_010" ID="{3AEFC198-B5F5-451D-B7C6-D12F6CF95098}" ShortID="852643912">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Death_Murdock_010" ID="{F2C71159-444C-4A06-B21A-A3DC4496DEA3}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Death_Murdock_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="44725420"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Death_Murdock_010" ID="{F2C71159-444C-4A06-B21A-A3DC4496DEA3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Murdock_010" ID="{964EDD18-1AF1-40B8-ABE6-F7566B5FAC83}" ShortID="850514796">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Murdock_010" ID="{5ADAEC28-17AE-4B5A-A804-5E66F73A11EE}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Murdock_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="928371597"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Murdock_010" ID="{5ADAEC28-17AE-4B5A-A804-5E66F73A11EE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Murdock_020" ID="{7E143031-CC17-4743-AFE7-19B8DF73F8B0}" ShortID="730090830">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Murdock_020" ID="{CAFF8C99-EEA6-4889-BAB8-952496115E79}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Murdock_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="398005536"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Murdock_020" ID="{CAFF8C99-EEA6-4889-BAB8-952496115E79}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Murdock_030" ID="{7AA1F6E4-3EDB-4052-ADDD-0F166AA06E7F}" ShortID="927500572">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Murdock_030" ID="{E5D31CCA-71C5-428C-9798-0CE23CF7B04C}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Murdock_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="10120520"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Murdock_030" ID="{E5D31CCA-71C5-428C-9798-0CE23CF7B04C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Murdock_040" ID="{BB4A190F-F0F1-4BB6-B961-8B7B247002C4}" ShortID="772015717">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Murdock_040" ID="{DC4521E4-1796-49ED-A9AC-6CCE90EFA10C}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Murdock_040.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="885891160"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Murdock_040" ID="{DC4521E4-1796-49ED-A9AC-6CCE90EFA10C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Murdock_050" ID="{130F34A3-67AB-4D86-AAD7-8A63BB8B724D}" ShortID="806942403">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Murdock_050" ID="{498F50F6-1933-4E7B-9E55-BC975571441E}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Murdock_050.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="117929007"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Murdock_050" ID="{498F50F6-1933-4E7B-9E55-BC975571441E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Murdock_060" ID="{D7E34791-66F3-4CF7-80EF-B38A11ABFA4D}" ShortID="1049570891">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Murdock_060" ID="{C08A5AFB-79D6-4A00-A6B8-FEAB647C8BCB}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Murdock_060.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="162148238"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Murdock_060" ID="{C08A5AFB-79D6-4A00-A6B8-FEAB647C8BCB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Murdock_070" ID="{5F677874-59DD-4BE8-A605-AA1714C67158}" ShortID="852806792">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Murdock_070" ID="{FE243B4A-6990-479D-9C0D-E030D48CD72B}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Murdock_070.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="987191678"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Murdock_070" ID="{FE243B4A-6990-479D-9C0D-E030D48CD72B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Murdock_080" ID="{5D842E61-90C1-4F30-AF89-3A43470CCFAB}" ShortID="1048847492">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Murdock_080" ID="{02DB91EE-A967-4FB6-A8B1-4DF6C0C6820C}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Murdock_080.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="306434882"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Murdock_080" ID="{02DB91EE-A967-4FB6-A8B1-4DF6C0C6820C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Murdock_090" ID="{D4FCE971-924D-464D-9FFD-67707C48579C}" ShortID="471374367">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Murdock_090" ID="{A390DFF8-EE8F-41EB-AD2C-7F58DA6E0890}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Murdock_090.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="998932509"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Murdock_090" ID="{A390DFF8-EE8F-41EB-AD2C-7F58DA6E0890}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Murdock_100" ID="{30D9E235-672A-4760-A1F7-FED123DA32CA}" ShortID="185240557">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Murdock_100" ID="{8DD90909-1971-4A5B-B0DF-0127BCBC821B}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Murdock_100.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="894277719"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Murdock_100" ID="{8DD90909-1971-4A5B-B0DF-0127BCBC821B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Murdock_110" ID="{E7D87711-972D-4395-B148-762CACA387D2}" ShortID="958939985">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Murdock_110" ID="{CE602CC4-ED2E-4A88-9FAF-FCBA333B7E2D}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Murdock_110.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="679181296"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Murdock_110" ID="{CE602CC4-ED2E-4A88-9FAF-FCBA333B7E2D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="LtBelica_Lore_Murdock_120" ID="{40953775-E0F9-4538-AD22-D259B0BC9ED1}" ShortID="70647146">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LtBelica_Lore_Murdock_120" ID="{C54E29F6-1341-4CEC-9A86-92EDB6BA28F7}">
+											<Language>SFX</Language>
+											<AudioFile>LtBelica_Lore_Murdock_120.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="269658182"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="LtBelica_Lore_Murdock_120" ID="{C54E29F6-1341-4CEC-9A86-92EDB6BA28F7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="MurdockDialogue" ID="{282822C8-E057-442C-959D-8183E10D1955}" ShortID="981539191">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{EEA8009C-5E55-459D-9C00-7E6184850FF8}" ShortID="169267100">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="NoiseVolume" ID="{881B5E7D-861F-46BF-A32D-9A4E9EFE29D0}" WorkUnitID="{778D93EB-1160-4D06-BBF4-4AA7B893ADB5}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5D131AB6-3703-4BC0-B9E3-590BA852FFBE}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Murdock_Ability_No_010" ID="{2102310E-8B04-4466-B7BD-53DCEFBA9F69}" ShortID="152406733">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Ability_No_010" ID="{9F0C4A98-09F5-4D67-9389-523DBD1B350E}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Ability_No_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="255304294"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Ability_No_010" ID="{9F0C4A98-09F5-4D67-9389-523DBD1B350E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Ability_No_020" ID="{4CDA841B-9E9B-4707-AB4C-A379171C771C}" ShortID="744111590">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Ability_No_020" ID="{BB55E994-3323-48DD-A302-ECD662929987}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Ability_No_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="707267964"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Ability_No_020" ID="{BB55E994-3323-48DD-A302-ECD662929987}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Ability_No_030" ID="{A5D0D494-5182-4A02-80A7-9250BB76F03C}" ShortID="486348065">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Ability_No_030" ID="{6C6A8334-6F44-4D3A-B2F0-58BBA62B44D1}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Ability_No_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1048524296"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Ability_No_030" ID="{6C6A8334-6F44-4D3A-B2F0-58BBA62B44D1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Ability_No_040" ID="{30BD4D59-E8E5-4DA4-8608-106F33C5DD6E}" ShortID="137573866">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Ability_No_040" ID="{78B9797C-FC8A-4B40-829B-B50BB318FAE7}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Ability_No_040.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="560443817"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Ability_No_040" ID="{78B9797C-FC8A-4B40-829B-B50BB318FAE7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_Boast_010" ID="{C50AD0D7-D7E1-4F04-96BF-F5154DE56BA3}" ShortID="347244359">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_Boast_010" ID="{63E2DADE-6215-43A1-B4F5-BBA80D17A11B}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_Boast_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="100688632"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_Boast_010" ID="{63E2DADE-6215-43A1-B4F5-BBA80D17A11B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_Boast_020" ID="{CEA5E6F2-782D-4952-9FDD-C91E7B17AEA5}" ShortID="1024053618">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_Boast_020" ID="{E253D6A4-8865-4680-A053-0AD9B359A5F4}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_Boast_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="674064457"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_Boast_020" ID="{E253D6A4-8865-4680-A053-0AD9B359A5F4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_Boast_030" ID="{24C43A51-2C11-45C5-A3AD-4BCAAA4FF957}" ShortID="483719653">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_Boast_030" ID="{A9DFEFE1-B6B9-4D94-A1D1-BDA6D4329479}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_Boast_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="259714012"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_Boast_030" ID="{A9DFEFE1-B6B9-4D94-A1D1-BDA6D4329479}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_BoastResponse_010" ID="{5D3C319E-5170-4626-8D6E-8EBCCCD98F0B}" ShortID="1023911024">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_BoastResponse_010" ID="{A8D3813D-17CB-43C1-87FC-519122F1E024}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_BoastResponse_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="156522835"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_BoastResponse_010" ID="{A8D3813D-17CB-43C1-87FC-519122F1E024}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_BoastResponse_020" ID="{11826A29-E751-4807-912B-02F1C730647B}" ShortID="427664642">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_BoastResponse_020" ID="{7BA8C134-283E-4591-860B-CD1C2BC61FA6}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_BoastResponse_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="752107295"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_BoastResponse_020" ID="{7BA8C134-283E-4591-860B-CD1C2BC61FA6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_BoastResponse_030" ID="{7EFCEFE3-00AC-49CE-A99F-DC5D29160D71}" ShortID="972423111">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_BoastResponse_030" ID="{F4449783-434C-46BF-941F-559D24EB0C69}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_BoastResponse_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="257160215"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_BoastResponse_030" ID="{F4449783-434C-46BF-941F-559D24EB0C69}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_Question_010" ID="{E1C599E4-1A39-4124-BD15-B3FCA3E41D28}" ShortID="288430012">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_Question_010" ID="{9F4CD502-BBD4-4061-9495-44D00AFBEC93}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_Question_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="144154558"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_Question_010" ID="{9F4CD502-BBD4-4061-9495-44D00AFBEC93}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_Question_020" ID="{944A5F4A-B57F-4111-8A2B-350C416CAF39}" ShortID="519145981">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_Question_020" ID="{7C9CB51C-E677-4D16-B730-B34375281CA4}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_Question_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="721824175"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_Question_020" ID="{7C9CB51C-E677-4D16-B730-B34375281CA4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_Question_030" ID="{C4339735-26C1-4BC0-8C2F-348C2DBB0648}" ShortID="726062006">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_Question_030" ID="{351F83E4-7C38-4E37-BCDA-80F7D6EDAF60}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_Question_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="301671112"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_Question_030" ID="{351F83E4-7C38-4E37-BCDA-80F7D6EDAF60}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_QuestionResponse_010" ID="{B88482E0-8B59-489D-8180-97A3B3DEFD10}" ShortID="498284418">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_QuestionResponse_010" ID="{E30FD994-EA0F-4FD3-BDF2-0C5D10B593F9}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_QuestionResponse_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="742816725"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_QuestionResponse_010" ID="{E30FD994-EA0F-4FD3-BDF2-0C5D10B593F9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_QuestionResponse_020" ID="{F656ACB4-A39F-4743-BBDC-969C989BB854}" ShortID="84174349">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_QuestionResponse_020" ID="{9C4E0FF3-A107-47C8-8778-FDCC302CB202}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_QuestionResponse_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="704117873"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_QuestionResponse_020" ID="{9C4E0FF3-A107-47C8-8778-FDCC302CB202}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_QuestionResponse_030" ID="{4ACC3E53-2F5E-48F4-9733-309CB66C73F6}" ShortID="49316499">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_QuestionResponse_030" ID="{5EF8F4CF-D8D1-43D0-A556-8092432BE725}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_QuestionResponse_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="135268623"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_QuestionResponse_030" ID="{5EF8F4CF-D8D1-43D0-A556-8092432BE725}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_Statement_010" ID="{66FCA779-C626-4D3C-A705-6CB1E9EB23CB}" ShortID="314903744">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_Statement_010" ID="{666C3C46-09D2-44F4-9A11-2392C8B6D535}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_Statement_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="828723199"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_Statement_010" ID="{666C3C46-09D2-44F4-9A11-2392C8B6D535}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_Statement_020" ID="{122CB55E-63CC-471A-A790-A34263A0CE88}" ShortID="420500569">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_Statement_020" ID="{F04FF4BC-74A1-413F-9EE5-5303F08F932E}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_Statement_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="296606076"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_Statement_020" ID="{F04FF4BC-74A1-413F-9EE5-5303F08F932E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Intro_Statement_030" ID="{40EECE28-8004-4B3B-896F-F53E58E83A67}" ShortID="226763461">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Intro_Statement_030" ID="{B5C051AC-33B6-45E1-93A5-B4BB85443A6B}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Intro_Statement_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="808890298"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Intro_Statement_030" ID="{B5C051AC-33B6-45E1-93A5-B4BB85443A6B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Belica_010" ID="{D0E03DAB-DF45-47A2-A531-BAF15F3DDDAA}" ShortID="496636282">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Belica_010" ID="{1D4382D1-BE6A-4267-909E-112C4DF0A223}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Belica_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="794899773"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Belica_010" ID="{1D4382D1-BE6A-4267-909E-112C4DF0A223}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Belica_020" ID="{40797267-05C4-46D4-983F-FDAF514529E7}" ShortID="427574689">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Belica_020" ID="{3374B321-8B05-4E9A-9B94-5D35585F90AA}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Belica_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="248746531"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Belica_020" ID="{3374B321-8B05-4E9A-9B94-5D35585F90AA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Belica_030" ID="{79022AF4-F643-4342-8FD8-4878754EF30F}" ShortID="552387756">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Belica_030" ID="{1D27D8E2-EC64-4C63-8604-120BE39F2EAE}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Belica_030.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="965708716"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Belica_030" ID="{1D27D8E2-EC64-4C63-8604-120BE39F2EAE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Belica_040" ID="{C6F27972-9D85-47CC-ABB4-572A48A9395A}" ShortID="731153234">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Belica_040" ID="{89CD8C08-75EB-423C-B69D-2AA7F58AE64A}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Belica_040.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="139726699"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Belica_040" ID="{89CD8C08-75EB-423C-B69D-2AA7F58AE64A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Belica_050" ID="{84C539EE-C93A-4D25-962C-B3F5D2BBD86D}" ShortID="394843110">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Belica_050" ID="{B15D7527-5FA3-417B-A75A-BA21779CF212}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Belica_050.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="889307987"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Belica_050" ID="{B15D7527-5FA3-417B-A75A-BA21779CF212}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Belica_060" ID="{F523C0C7-5E08-4528-9EA8-877C4C4D6B0E}" ShortID="811354526">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Belica_060" ID="{E63CB70E-3658-4E87-9A2D-F86BE4517DAE}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Belica_060.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="398367148"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Belica_060" ID="{E63CB70E-3658-4E87-9A2D-F86BE4517DAE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Belica_070" ID="{F41692C3-6227-470B-8914-DE05AD09F9E9}" ShortID="240383963">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Belica_070" ID="{9DA40329-1C94-45CA-8FE4-CC68E08DAB64}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Belica_070.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="469210919"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Belica_070" ID="{9DA40329-1C94-45CA-8FE4-CC68E08DAB64}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Belica_080" ID="{9C812864-EAD2-4BA6-BBCE-F48859F7AEBF}" ShortID="962060464">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Belica_080" ID="{CEAB83B8-8F63-410A-9824-DE22FF0489CE}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Belica_080.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="23241998"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Belica_080" ID="{CEAB83B8-8F63-410A-9824-DE22FF0489CE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Belica_090" ID="{1C575DA3-5F6B-40F0-AFDC-62A2F7BC07E1}" ShortID="808983668">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Belica_090" ID="{34867A21-5304-4348-AD00-38F96EEC9976}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Belica_090.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="64570879"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Belica_090" ID="{34867A21-5304-4348-AD00-38F96EEC9976}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Belica_100" ID="{98AF08B2-959B-47A6-BC40-AB350F410AE7}" ShortID="663321689">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Belica_100" ID="{19D254B0-1C08-4D13-8BF1-DFBEBE7EBD42}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Belica_100.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="663645534"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Belica_100" ID="{19D254B0-1C08-4D13-8BF1-DFBEBE7EBD42}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Belica_110" ID="{437B4EAB-C8A4-44A1-9C6D-4FB7143CB7DC}" ShortID="101596408">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Belica_110" ID="{3AF70A04-E4BB-42BA-80D6-66239AF5A464}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Belica_110.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="887244077"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Belica_110" ID="{3AF70A04-E4BB-42BA-80D6-66239AF5A464}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Belica_120" ID="{E71911C5-813A-4FDD-A0DD-4629A3295219}" ShortID="499279720">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Belica_120" ID="{B45E1BE1-9A2A-460C-BA30-9FAF883669FD}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Belica_120.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="887107573"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Belica_120" ID="{B45E1BE1-9A2A-460C-BA30-9FAF883669FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Lore_Death_Belica_010" ID="{2C50AD62-EBF5-4F63-8887-8007409D599F}" ShortID="61209880">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Lore_Death_Belica_010" ID="{FB50E2ED-38AD-40E9-9196-421307C6A159}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Lore_Death_Belica_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="620159966"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Lore_Death_Belica_010" ID="{FB50E2ED-38AD-40E9-9196-421307C6A159}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Status_Idle_010" ID="{85E60C41-1859-425A-BAAF-CCD28C5FE1CD}" ShortID="61741094">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Status_Idle_010" ID="{9B43F560-2E18-4AD1-AD44-6B198DE87FEB}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Status_Idle_010.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1059892883"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Status_Idle_010" ID="{9B43F560-2E18-4AD1-AD44-6B198DE87FEB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Murdock_Status_Victory_020" ID="{2C3CF493-59FC-48BC-B26E-FEB276F6F3B0}" ShortID="220459106">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Murdock_Status_Victory_020" ID="{A526E72F-15DB-4F68-85A9-54B18BECD0D1}">
+											<Language>SFX</Language>
+											<AudioFile>Murdock_Status_Victory_020.WAV</AudioFile>
+											<MediaIDList>
+												<MediaID ID="780231363"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Murdock_Status_Victory_020" ID="{A526E72F-15DB-4F68-85A9-54B18BECD0D1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{9F4DD359-695C-445C-A2DA-902CFA73B6AD}"/>
+					</PositioningInfo>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Noise Floor" ID="{110C2264-2569-413B-9D93-5DA87C610131}" ShortID="872005310">
+					<PropertyList>
+						<Property Name="EnableLoudnessNormalization" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{52CE23AB-4160-4F26-93D1-27924C870C9D}" ShortID="378371440">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="NoiseVolume" ID="{881B5E7D-861F-46BF-A32D-9A4E9EFE29D0}" WorkUnitID="{778D93EB-1160-4D06-BBF4-4AA7B893ADB5}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{0282AA2D-C5EC-4351-9E11-8D9B74A0BE15}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="1"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-96</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="NoiseContainer" ID="{06195B6C-3DC1-4745-B6D4-4657B4C8D91D}" ShortID="375796196">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Traffic" ID="{7C2EEAB2-D648-4954-8B9A-9F05069062BF}" ShortID="617044906">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsVoice" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9004C00-191E-4268-B509-5C5E83F9B86D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{FB7AF1F0-536F-459F-9767-EBD743A8039A}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="URBAN_traffic_seattle_loop_05" ID="{2DB4A092-26A9-40EE-BCF6-FB5EE143D2F4}">
+											<Language>English(US)</Language>
+											<AudioFile>URBAN_traffic_seattle_loop_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="782505739"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="URBAN_traffic_seattle_loop_05" ID="{2DB4A092-26A9-40EE-BCF6-FB5EE143D2F4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="Traffic" ID="{7C2EEAB2-D648-4954-8B9A-9F05069062BF}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

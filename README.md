@@ -1,6 +1,24 @@
-# Project
+# Acoustic Perception for Virtual AI Agents
 
-The code for this project is currently under review. We will post the code once the review has been completed, with an ETA of end of September.
+This repo contains code based on Microsoft Project Acoustics, and implements an acoustic perception algorithm for Virtual AI agents described in [this paper](https://dl.acm.org/doi/10.1145/3480139). Below is a demonstration of our method.
+
+[![Demo Video](https://img.youtube.com/vi/Z_t37500Cpg/0.jpg)](https://www.youtube.com/watch?v=Z_t37500Cpg)
+
+The method is wholly contained in the AcousticsSecondaryListener class, split between [the header](Plugins\ProjectAcoustics\Source\ProjectAcoustics\Public\AcousticsSecondaryListener.h) and [implementation](Plugins\ProjectAcoustics\Source\ProjectAcoustics\Private\AcousticsSecondaryListener.cpp).
+
+## Required tools
+
+This project depends on Visual Studio 2019, UE 4.25, and Wwise 2021.1. To run the project, you must:
+- Clone the repo. This repo uses [Git LFS](https://git-lfs.github.com/). Ensure Git LFS is installed prior to cloning.
+- This project relies on Wwise Convolution Reverb, which requires a separate license. Add this license to your local copy of the Wwise project if you want to regenerate sound banks.
+- Integrate Wwise 2021.1 into the project
+- Run [PatchWwise.bat](Plugins/ProjectAcoustics/Resources/PatchWwise.bat)
+- Generate VS project files for the project
+- Build and run from VS
+
+## Troubleshooting
+
+If you have any issues with the project, please ask questions via the issues tab.
 
 ## Contributing
 
@@ -23,3 +41,7 @@ trademarks or logos is subject to and must follow
 [Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
 Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
 Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+## Notice
+
+Digital content in this repository is for demonstration purposes only. The content is directly accessible from the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/store) and is subject to those terms.

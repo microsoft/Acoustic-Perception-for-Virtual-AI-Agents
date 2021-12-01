@@ -1,0 +1,39 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	158493456	ZP_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Short	
+	484670024	YM_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Med	
+	774778998	XP_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Short	
+	894421048	ZP_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Med	
+	897077186	XP_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Med	
+	965806348	Verb_Z_Minus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus	
+	1142749239	ZM_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Long	
+	1166486403	XM_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Med	
+	1267922468	Verb_Z_Plus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus	
+	1727306497	XM_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Long	
+	1803359386	Verb_X_Plus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus	
+	1906930016	YM_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Long	
+	1961877785	YP_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Short	
+	2235405312	YM_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus\YM_Short	
+	2319091066	XP_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Plus\XP_Long	
+	2485735536	ZP_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Plus\ZP_Long	
+	2559008093	Verb_Y_Plus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus	
+	2917229290	Reverb_Bus			\Default Work Unit\Master Audio Bus\Reverb_Bus	
+	3070963527	YP_Long			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Long	
+	3184958345	ZM_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Short	
+	3230458499	Verb_Y_Minus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Minus	
+	3768545922	Verb_X_Minus			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus	
+	3929899537	ZM_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Z_Minus\ZM_Med	
+	4150984887	XM_Short			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_X_Minus\XM_Short	
+	4257713601	YP_Med			\Default Work Unit\Master Audio Bus\Reverb_Bus\Verb_Y_Plus\YP_Med	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2379518759	ConvMed	Wwise Convolution Reverb			
+	2677636451	ConvShort	Wwise Convolution Reverb			
+	4285558021	ConvLong	Wwise Convolution Reverb			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
