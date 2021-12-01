@@ -36,76 +36,6 @@ namespace {
         return 10.0f * std::log10f(e);
     }
 
-    // Generate a kernel (in energy units) that is convolved agaisnt comparitive signals to produce a masking function.
-    void generateMaskingKernel(float* kernel, size_t len, float dBStart, float dB90Deg)
-    {
-        // Create a cos^2(theta) window function.
-        float dBRange = dBStart - dB90Deg;
-        float TwoPiByLen = 2.0f * kPI / static_cast<float>(len);
-        float e90Deg = FMath::Pow(10.0f, dB90Deg / 10.0f);
-        for (size_t i = 0; i < len; ++i)
-        {
-            float cosTheta = FMath::Cos(static_cast<float>(i) * TwoPiByLen);
-            if (cosTheta > 0.0f)
-            {
-                float dBAtIdxI = cosTheta * cosTheta * dBRange + dB90Deg;
-                
-                // Convert to energy units.
-                kernel[i] = FMath::Pow(10.0f, dBAtIdxI / 10.0f);
-            }
-            else
-            {
-                kernel[i] = e90Deg;
-            }
-        }
-    }
-
-    // Generate a kernel (in energy units) that is convolved agaisnt comparitive signals to produce an energy-preserving source spread function.
-    void generateSourceSpreadKernel(float* kernel, size_t len)
-    {
-        // Create a cos^2(theta) window function.
-        float TwoPiByLen = 2.0f * kPI / static_cast<float>(len);
-        float sum = 0.0f;
-        for (size_t i = 0; i < len; ++i)
-        {
-            float cosTheta = FMath::Cos(static_cast<float>(i) * TwoPiByLen);
-            if (cosTheta > 0.0f)
-            {
-                kernel[i] = cosTheta * cosTheta;
-                sum += kernel[i];
-            }
-            else
-            {
-                kernel[i] = 0.0f;
-            }
-        }
-
-        // Preserve energy by normalizing the kernel.
-        float recip_sum = 1.0f / (sum + 1e-10f);
-        for (size_t i = 0; i < len; ++i)
-        {
-            kernel[i] *= recip_sum;
-        }
-    }
-
-    // Print signal to debug log.
-    void printSignal(float* signal, size_t len)
-    {
-        for (size_t i = 0; i < len; ++i)
-        {
-            UE_LOG(LogAcousticsRuntime, Display, TEXT("[%d] %f"), i, signal[i]);
-        }
-    }
-
-    // Print complex signal to debug log.
-    void printComplexSignal(std::complex<float>* signal, size_t len)
-    {
-        for (size_t i = 0; i < len; ++i)
-        {
-            UE_LOG(LogAcousticsRuntime, Display, TEXT("[%d] %f + %fi"), i, signal[i].real(), signal[i].imag());
-        }
-    }
-
 }  // namespace
 
 UAcousticsSecondaryListener::UAcousticsSecondaryListener(const class FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
@@ -132,8 +62,6 @@ void UAcousticsSecondaryListener::BeginPlay()
         m_reflIndices[i] = static_cast<size_t>(static_cast<float>(i * kANGLE_COUNT) / 4.0f + 0.5f);
     }
 
-    // Initialize kernels.
-    ComputeKernels();
     GenerateMuLookupTable();
     GenerateBetaMuLookupTable();
 }
@@ -631,20 +559,6 @@ void UAcousticsSecondaryListener::AccumulatePolicyInputs()
     {
         AccumulateAmbiences();
     }
-}
-
-void UAcousticsSecondaryListener::ComputeKernels()
-{
-    std::array<float, kANGLE_COUNT> kernel;
-    const float MaxAttenuationAt90Deg = -7;
-
-    // Generate the source-width spreading kernel.
-    kernel.fill(0);
-    generateSourceSpreadKernel(kernel.data(), kANGLE_COUNT);
-
-    // Generate the angle-dependent-attenuation masking kernel.
-    kernel.fill(0);
-    generateMaskingKernel(kernel.data(), kANGLE_COUNT, 0, MaxAttenuationAt90Deg);
 }
 
 void UAcousticsSecondaryListener::EvaluatePolicy()

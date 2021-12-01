@@ -128,7 +128,6 @@ private:
     float Sigmoid(float x, float x_min, float x_max);
     SourceEnergy TritonParamsToSourceEnergy(const TritonAcousticParameters& params, float loudness_dbspl);
 
-    void ComputeKernels();
     void AddEnergyToNoiseFloor(const SourceEnergy& energy);
     void EvaluatePolicy();
 
